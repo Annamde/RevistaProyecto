@@ -24,4 +24,12 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         transform.position = objPosition;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == this.tag)
+        {
+            print("WOOOW AMAISIN ANNA ERES LA MEJOR TQM");
+        }
+    }
 }
