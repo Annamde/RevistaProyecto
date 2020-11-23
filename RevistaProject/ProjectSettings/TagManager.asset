@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Type1
+  - End
+  - Type2
   layers:
   - Default
   - TransparentFX

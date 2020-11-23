@@ -6,6 +6,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 {
     public int speed = 3;
     public SpriteRenderer mySprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +26,20 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         transform.position = objPosition;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == this.tag)
         {
             print("WOOOW AMAISIN ANNA ERES LA MEJOR TQM");
+        }
+        else if (collision.gameObject.tag == "End")
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            GameManager.Instance.CheckLifes();
+            Destroy(this.gameObject);
         }
     }
 }

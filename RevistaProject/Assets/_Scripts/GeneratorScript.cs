@@ -5,9 +5,10 @@ using UnityEngine;
 public class GeneratorScript : MonoBehaviour
 {
     public List<GameObject> chakrasType1;
+    public List<GameObject> positions;
     public float initialTime=1, intervaltime=3;
 
-    private int temp;
+    private int temp, tempPos;
     private GameObject tempGO;
 
     // Start is called before the first frame update
@@ -18,10 +19,11 @@ public class GeneratorScript : MonoBehaviour
 
     void Generator()
     {
-        temp = Random.Range(1, chakrasType1.Count);
+        temp = Random.Range(0, chakrasType1.Count);
+        tempPos = Random.Range(0, positions.Count);
        
         tempGO = Instantiate(chakrasType1[temp]);
-        tempGO.transform.position = this.gameObject.transform.position; //cambiar
+        tempGO.transform.position = positions[tempPos].gameObject.transform.position;
     }
 
 
