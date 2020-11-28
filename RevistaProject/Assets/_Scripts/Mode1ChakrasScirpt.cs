@@ -7,6 +7,9 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     public int speed = 3;
     public SpriteRenderer mySprite;
 
+    private bool correctCheck = false;
+    private bool wrongCheck = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +19,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     void OnMouseDrag()
@@ -30,7 +33,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     {
         if (collision.gameObject.tag == this.tag)
         {
-            print("WOOOW AMAISIN ANNA ERES LA MEJOR TQM");
+            correctCheck = true;
         }
         else if (collision.gameObject.tag == "End")
         {
@@ -38,6 +41,30 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         }
         else
         {
+            wrongCheck = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == this.tag) 
+        {
+            correctCheck = false;
+        }
+        else if (collision.gameObject.tag != this.tag)
+        {
+            wrongCheck = false;
+        }
+    }
+    private void OnMouseUp()
+    {
+        if (correctCheck) //si esta colisionando con una correcta y una incorrecta a la vez, se le da prioridad a la correcta (creo)
+        {
+            print("WOOOW AMAISIN ANNA (Y/O MARC, DEPENDE DE QUIEN ESTÉ JUGANDO EN ESE MOMENTO) ERES LA MEJOR TQM");
+            //que se quede la bolita en el sitio
+        }
+        else if (wrongCheck)
+        {
+            print("MU MAL");
             GameManager.Instance.CheckLifes();
             Destroy(this.gameObject);
         }
