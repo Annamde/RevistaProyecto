@@ -10,6 +10,8 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     private bool correctCheck = false;
     private bool wrongCheck = false;
 
+    public int totalPoints; //puntos necesarios por nivel
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnMouseDrag()
@@ -60,7 +62,8 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         if (correctCheck) //si esta colisionando con una correcta y una incorrecta a la vez, se le da prioridad a la correcta (creo)
         {
             print("WOOOW AMAISIN ANNA (Y/O MARC, DEPENDE DE QUIEN ESTÉ JUGANDO EN ESE MOMENTO) ERES LA MEJOR TQM");
-            //que se quede la bolita en el sitio
+            GameManager.Instance.CheckPoints(totalPoints);
+            Destroy(this.gameObject);
         }
         else if (wrongCheck)
         {
