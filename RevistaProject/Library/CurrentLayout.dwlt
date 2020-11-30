@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 474}
   m_MaxSize: {x: 18006, y: 14024}
   vertical: 0
-  controlID: 34
+  controlID: 32
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 324}
   m_MaxSize: {x: 4002, y: 8024}
   vertical: 1
-  controlID: 47
+  controlID: 33
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -160,8 +160,8 @@ MonoBehaviour:
     y: 0
     width: 657
     height: 483
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 474}
   m_MaxSize: {x: 10004, y: 14024}
   vertical: 1
-  controlID: 97
+  controlID: 52
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -360,7 +360,7 @@ MonoBehaviour:
       y: 17
       width: 655
       height: 446
-    m_Scale: {x: 0.42643228, y: 0.42643225}
+    m_Scale: {x: 0.42643228, y: 0.42643228}
     m_Translation: {x: 327.5, y: 223}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -373,7 +373,7 @@ MonoBehaviour:
       width: 1536
       height: 1045.8871
     m_MinimalGUI: 1
-  m_defaultScale: 0.72591144
+  m_defaultScale: 0.42643228
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 818.75, y: 578.75}
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -8532
+  m_LastSelectedObjectID: 11890
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -639,23 +639,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fc380000
-      m_LastClickedID: 14588
-      m_ExpandedIDs: d8d8ffff8cdeffff90deffff94deffff98deffffa0deffffa4deffffa8deffffacdeffffc2deffff22dfffff26dfffff2adfffff2edfffff36dfffff3adfffff3edfffff42dfffffb8dfffffbcdfffffc0dfffffc4dfffffccdfffffd0dfffffd4dfffffd8dfffff4ee0ffff52e0ffff56e0ffff5ae0ffff62e0ffff66e0ffff6ae0ffff6ee0ffffe4e0ffffe8e0ffffece0fffff0e0fffff8e0fffffce0ffff00e1ffff04e1ffff7ae1ffff7ee1ffff82e1ffff86e1ffff8ee1ffff92e1ffff96e1ffff9ae1ffff10e2ffff14e2ffff18e2ffff1ce2ffff24e2ffff28e2ffff2ce2ffff30e2ffff48e2ffff9cf2fffffaf6ffff6efaffffd4fbfffff4ffffff5c2d0000fc38000018390000
+      m_SelectedIDs: 1c390000
+      m_LastClickedID: 14620
+      m_ExpandedIDs: 9ae8ffff18e9ffffa2e9ffff84efffff2af0ffff68f4ffffcef5ffff4ef8ffffd4fbfffff4ffffffc628000032370000ba37000038390000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: CanvasMenu
+        m_OriginalName: CanvasMenu
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 14648
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 10}
       m_SearchString: 

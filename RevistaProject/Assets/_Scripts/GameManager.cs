@@ -35,20 +35,13 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().name != "MenuScene")
-        {
-            canvasGO.enabled = false;
-            canvasWIN.enabled = false;
-        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name != "MenuScene")
-        {
-            SetText(lifeText, life);
-        }
+        
     }
 
     public void ResetLifes(int num)
@@ -81,7 +74,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void SetText(Text temp, int num)
+    public void SetText(Text temp, int num)
     {
         temp.text = num.ToString();
     }
@@ -99,5 +92,11 @@ public class GameManager : MonoBehaviour
     public void ChangeScene(string nameScene)
     {
         SceneManager.LoadScene(nameScene);
+    }
+
+    public void Mode1Values(int vidas)
+    {
+        life = vidas;
+
     }
 }
