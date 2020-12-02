@@ -27,6 +27,12 @@ public class Mode1Script : MonoBehaviour
         if(GameManager.currentPoints >= GameManager.Instance.totalPointsInGame)
         {
             GameManager.EnableCanvas(canvasWIN);
+
+            if (!GameManager.addedCurrency)
+            {
+                GameManager.AddCurrency();
+                GameManager.addedCurrency = true;
+            }
         }
 
         if(GameManager.life <= 0)

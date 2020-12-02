@@ -15,6 +15,18 @@ public class GameManager : MonoBehaviour
 
     public int points4Chakra = 10; //los puntos por chackra correcto 
     public int totalPointsInGame = 100;
+    public static int colorMode = 1;
+    public static int rewardAmount = 10;
+
+    public static int totalBlueCurrency1 = 0;
+    public static int totalYellowCurrency2 = 0;
+    public static int totalPinkCurrency3 = 0;
+    public static int totalWhiteCurrency4 = 0;
+    public static int totalGreenCurrency5 = 0;
+    public static int totalOrangeCurrency6 = 0;
+    public static int totalPurpleCurrency7 = 0;
+
+    public static bool addedCurrency = false;
 
     private void Awake()
     {
@@ -40,7 +52,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(currentPoints + "   " + totalPointsInGame);
+        //print(currentPoints + "   " + totalPointsInGame);
+        print(totalBlueCurrency1 + " " + totalYellowCurrency2 + " " + totalPinkCurrency3 + " " + totalWhiteCurrency4 + " " + totalGreenCurrency5 + " " + totalOrangeCurrency6 + " " + totalPurpleCurrency7);
     }
 
     public void ResetLifes(int num)
@@ -74,6 +87,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         canvas.enabled = false;
+        addedCurrency = false;
     }
 
     public static void EnableCanvas(Canvas canvas)
@@ -101,5 +115,41 @@ public class GameManager : MonoBehaviour
     public void SetTotalPoints(int totalPoints)
     {
         totalPointsInGame = totalPoints;
+    }
+    public void SetMode(int mode)
+    {
+        colorMode = mode;
+    }
+    public void SetRewardAmount(int reward)
+    {
+        rewardAmount = reward;
+    }
+
+    public static void AddCurrency()
+    {
+        switch (colorMode)
+        {
+            case 1:
+                totalBlueCurrency1 += rewardAmount;
+                break;
+            case 2:
+                totalYellowCurrency2 += rewardAmount;
+                break;
+            case 3:
+                totalPinkCurrency3 += rewardAmount;
+                break;
+            case 4:
+                totalWhiteCurrency4 += rewardAmount;
+                break;
+            case 5:
+                totalGreenCurrency5 += rewardAmount;
+                break;
+            case 6:
+                totalOrangeCurrency6 += rewardAmount;
+                break;
+            case 7:
+                totalPurpleCurrency7 += rewardAmount;
+                break;
+        }
     }
 }
