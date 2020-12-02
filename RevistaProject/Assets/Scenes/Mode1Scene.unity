@@ -1209,10 +1209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083aab60768fd394d8eb7832d65bfe23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeText: {fileID: 1829835506}
-  points4ChakraMode1: 10
-  canvasWIN: {fileID: 988906655}
-  canvasGO: {fileID: 1462286344}
+  points4Chakra: 10
+  totalPointsInGame: 100
 --- !u!4 &758245564
 Transform:
   m_ObjectHideFlags: 0
