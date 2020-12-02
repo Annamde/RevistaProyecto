@@ -11,11 +11,10 @@ public class GameManager : MonoBehaviour
     public static int life=3;
     public static int currentPoints = 0; //los puntos del jugador en la partida como tal
     static bool created = false;
+    
 
-    public Text lifeText;
-
-    public int points4ChakraMode1 = 10; //los puntos por chackra correcto en el modo 1 (supongo que seran los mismos en los demás, pero por ahora vamo asi)
-    public Canvas canvasWIN, canvasGO;
+    public int points4Chakra = 10; //los puntos por chackra correcto 
+    public int totalPointsInGame = 100;
 
     private void Awake()
     {
@@ -41,7 +40,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        print(currentPoints + "   " + totalPointsInGame);
     }
 
     public void ResetLifes(int num)
@@ -55,21 +54,13 @@ public class GameManager : MonoBehaviour
         {
             life--;
         }
-        else
-        {
-            canvasGO.enabled = true;
-        }
     }
 
-    public void CheckPoints(int totalPoints)
+    public void CheckPoints()
     {
-        if(currentPoints < totalPoints)
+        if(currentPoints < totalPointsInGame)
         {
-            currentPoints += points4ChakraMode1;
-        }
-        else
-        {
-            canvasWIN.enabled = true;
+            currentPoints += points4Chakra;
         }
 
     }
@@ -81,22 +72,34 @@ public class GameManager : MonoBehaviour
 
     public static void DisableCanvas(Canvas canvas)
     {
+        Time.timeScale = 1;
         canvas.enabled = false;
     }
 
     public static void EnableCanvas(Canvas canvas)
     {
+        Time.timeScale = 0;
         canvas.enabled = true;
     }
 
     public void ChangeScene(string nameScene)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(nameScene);
     }
 
-    public void Mode1Values(int vidas)
+    //public void Mode1Values(int vidas, int valueChakra, int totalPoints)
+    //{
+    //    life = vidas;
+    //    points4Chakra = valueChakra;
+    //    totalPointsInGame = totalPoints;
+    //}
+    public void SetLife(int vidas)
     {
         life = vidas;
-
+    }
+    public void SetTotalPoints(int totalPoints)
+    {
+        totalPointsInGame = totalPoints;
     }
 }

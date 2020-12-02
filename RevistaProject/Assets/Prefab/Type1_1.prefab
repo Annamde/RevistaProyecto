@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   mySprite: {fileID: 5056541791410990197}
+  totalPoints: 0
 --- !u!61 &5056541790835919697
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -89,7 +90,7 @@ Rigidbody2D:
   m_Mass: 0.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.3
+  m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

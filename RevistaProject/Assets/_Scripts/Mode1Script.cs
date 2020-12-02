@@ -18,14 +18,21 @@ public class Mode1Script : MonoBehaviour
     {
         canvasGO.enabled = false;
         canvasWIN.enabled = false;
-        GameManager.Instance.canvasGO = canvasGO;
-        GameManager.Instance.canvasWIN = canvasWIN;
     }
 
     // Update is called once per frame
     void Update()
     {
         GameManager.Instance.SetText(lifeText, GameManager.life);
+        if(GameManager.currentPoints >= GameManager.Instance.totalPointsInGame)
+        {
+            GameManager.EnableCanvas(canvasWIN);
+        }
+
+        if(GameManager.life <= 0)
+        {
+            GameManager.EnableCanvas(canvasGO);
+        }
     }
 
 

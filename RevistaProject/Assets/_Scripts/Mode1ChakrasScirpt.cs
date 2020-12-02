@@ -61,13 +61,11 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     {
         if (correctCheck) //si esta colisionando con una correcta y una incorrecta a la vez, se le da prioridad a la correcta (creo)
         {
-            print("WOOOW AMAISIN ANNA (Y/O MARC, DEPENDE DE QUIEN ESTÉ JUGANDO EN ESE MOMENTO) ERES LA MEJOR TQM");
-            GameManager.Instance.CheckPoints(totalPoints);
+            GameManager.Instance.CheckPoints();
             Destroy(this.gameObject);
         }
         else if (wrongCheck)
         {
-            print("MU MAL");
             GameManager.Instance.CheckLifes();
             Destroy(this.gameObject);
         }
