@@ -13,6 +13,8 @@ public class MenuManagerScript : MonoBehaviour
     public Text orangeText6;
     public Text purpleText7;
 
+    public Text xpPointsText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class MenuManagerScript : MonoBehaviour
     void Update()
     {
         UpdateCurrencyText();
+        UpdateXpText();
     }
 
     public void UpdateCurrencyText()
@@ -34,5 +37,9 @@ public class MenuManagerScript : MonoBehaviour
         greenText5.text = GameManager.totalGreenCurrency5.ToString();
         orangeText6.text = GameManager.totalOrangeCurrency6.ToString();
         purpleText7.text = GameManager.totalPurpleCurrency7.ToString();
+    }
+    public void UpdateXpText()
+    {
+        xpPointsText.text = GameManager.xpPointsTotal.ToString();
     }
 }

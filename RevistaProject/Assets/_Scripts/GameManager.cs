@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public int totalPointsInGame = 100;
     public static int colorMode = 1;
     public static int rewardAmount = 10;
+    public static int xpReward = 100;
 
     public static int totalBlueCurrency1 = 0;
     public static int totalYellowCurrency2 = 0;
@@ -25,6 +26,8 @@ public class GameManager : MonoBehaviour
     public static int totalGreenCurrency5 = 0;
     public static int totalOrangeCurrency6 = 0;
     public static int totalPurpleCurrency7 = 0;
+
+    public static int xpPointsTotal = 0;
 
     public static bool addedCurrency = false;
 
@@ -101,8 +104,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(nameScene);
     }
     
-    public static void AddCurrency()
+    public static void AddCurrencyAndXp()
     {
+        xpPointsTotal += xpReward;
+
         switch (colorMode)
         {
             case 1:

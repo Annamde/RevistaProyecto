@@ -28,5 +28,9 @@ public class StaticFunctions : MonoBehaviour
     {
         GameManager.rewardAmount = reward;
     }
+    public void SetXpRewardAmount(int xp)
+    {
+        GameManager.xpReward = xp;
+    }
     
 }

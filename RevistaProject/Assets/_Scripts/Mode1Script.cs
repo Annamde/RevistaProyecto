@@ -31,7 +31,7 @@ public class Mode1Script : MonoBehaviour
 
             if (!GameManager.addedCurrency)
             {
-                GameManager.AddCurrency();
+                GameManager.AddCurrencyAndXp();
                 GameManager.addedCurrency = true;
             }
         }
