@@ -87,7 +87,6 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         canvas.enabled = false;
-        addedCurrency = false;
     }
 
     public static void EnableCanvas(Canvas canvas)

@@ -23,6 +23,7 @@ public class Mode1Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print(GameManager.addedCurrency);
         GameManager.Instance.SetText(lifeText, GameManager.life);
         if(GameManager.currentPoints >= GameManager.Instance.totalPointsInGame)
         {

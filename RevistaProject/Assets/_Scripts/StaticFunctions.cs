@@ -8,6 +8,8 @@ public class StaticFunctions : MonoBehaviour
     public void ChangeScene(string nameScene)
     {
         Time.timeScale = 1;
+        GameManager.currentPoints = 0;
+        GameManager.addedCurrency = false;
         SceneManager.LoadScene(nameScene);
     }
     public void SetLife(int vidas)
