@@ -101,30 +101,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(nameScene);
     }
-
-    //public void Mode1Values(int vidas, int valueChakra, int totalPoints)
-    //{
-    //    life = vidas;
-    //    points4Chakra = valueChakra;
-    //    totalPointsInGame = totalPoints;
-    //}
-    public void SetLife(int vidas)
-    {
-        life = vidas;
-    }
-    public void SetTotalPoints(int totalPoints)
-    {
-        totalPointsInGame = totalPoints;
-    }
-    public void SetMode(int mode)
-    {
-        colorMode = mode;
-    }
-    public void SetRewardAmount(int reward)
-    {
-        rewardAmount = reward;
-    }
-
+    
     public static void AddCurrency()
     {
         switch (colorMode)

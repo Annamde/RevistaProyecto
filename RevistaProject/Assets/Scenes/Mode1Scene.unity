@@ -349,7 +349,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 758245563}
+      - m_Target: {fileID: 545184285}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -357,15 +357,15 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Mode1Scene
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 758245563}
-        m_MethodName: DisableCanvas
-        m_Mode: 2
+      - m_Target: {fileID: 988906655}
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 988906655}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Canvas, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -676,7 +676,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 416760946}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 545184285}
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Mode1Scene
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1462286344}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &416760946
@@ -866,6 +888,7 @@ GameObject:
   - component: {fileID: 545184284}
   - component: {fileID: 545184283}
   - component: {fileID: 545184282}
+  - component: {fileID: 545184285}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -937,6 +960,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &545184285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545184281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3739c0d420b86488c81ecf12172ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &550782037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,7 +1051,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 758245563}
+      - m_Target: {fileID: 545184285}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -1026,6 +1061,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: MenuScene
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1462286344}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -2386,7 +2432,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 758245563}
+      - m_Target: {fileID: 545184285}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -2397,16 +2443,16 @@ MonoBehaviour:
           m_StringArgument: MenuScene
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 758245563}
-        m_MethodName: DisableCanvas
-        m_Mode: 2
+      - m_Target: {fileID: 988906655}
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 988906655}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Canvas, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null

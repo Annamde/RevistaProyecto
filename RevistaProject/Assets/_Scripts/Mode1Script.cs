@@ -40,7 +40,4 @@ public class Mode1Script : MonoBehaviour
             GameManager.EnableCanvas(canvasGO);
         }
     }
-
-
-
 }
