@@ -27,6 +27,14 @@ public class GameManager : MonoBehaviour
     public static int totalOrangeCurrency6 = 0;
     public static int totalPurpleCurrency7 = 0;
 
+    public static int totalXpBlue1 = 0;
+    public static int totalXpYellow2 = 0;
+    public static int totalXpPink3 = 0;
+    public static int totalXpWhite4 = 0;
+    public static int totalXpGreen5 = 0;
+    public static int totalXpOrange6 = 0;
+    public static int totalXpPurple7 = 0;
+
     public static int xpPointsTotal = 0;
 
     public static bool addedCurrency = false;
@@ -106,30 +114,37 @@ public class GameManager : MonoBehaviour
     
     public static void AddCurrencyAndXp()
     {
-        xpPointsTotal += xpReward;
+        //xpPointsTotal += xpReward;
 
         switch (colorMode)
         {
             case 1:
                 totalBlueCurrency1 += rewardAmount;
+                totalXpBlue1 += xpReward;
                 break;
             case 2:
                 totalYellowCurrency2 += rewardAmount;
+                totalXpYellow2 += xpReward;
                 break;
             case 3:
                 totalPinkCurrency3 += rewardAmount;
+                totalXpPink3 += xpReward;
                 break;
             case 4:
                 totalWhiteCurrency4 += rewardAmount;
+                totalXpWhite4 += xpReward;
                 break;
             case 5:
                 totalGreenCurrency5 += rewardAmount;
+                totalXpGreen5 += xpReward;
                 break;
             case 6:
                 totalOrangeCurrency6 += rewardAmount;
+                totalXpOrange6 += xpReward;
                 break;
             case 7:
                 totalPurpleCurrency7 += rewardAmount;
+                totalXpPurple7 += xpReward;
                 break;
         }
     }

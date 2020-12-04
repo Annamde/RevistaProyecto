@@ -32,5 +32,5 @@ public class StaticFunctions : MonoBehaviour
     {
         GameManager.xpReward = xp;
     }
-    
+
 }
