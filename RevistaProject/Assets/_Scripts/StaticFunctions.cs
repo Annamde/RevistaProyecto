@@ -33,4 +33,12 @@ public class StaticFunctions : MonoBehaviour
         GameManager.xpReward = xp;
     }
 
+    public void RetryLevel()
+    {
+        ChangeScene(SceneManager.GetActiveScene().name);
+
+        GameManager.currentPoints = 0;
+        GameManager.currentLife = GameManager.life;
+    }
+
 }

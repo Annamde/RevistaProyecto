@@ -8,16 +8,17 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { set; get; }
 
-    public static int life=3;
+    public static int life=3; //la vida por nivel
+    public static int currentLife=3; //la vida que se va restando cada nivel
     public static int currentPoints = 0; //los puntos del jugador en la partida como tal
     static bool created = false;
     
 
     public int points4Chakra = 10; //los puntos por chackra correcto 
-    public int totalPointsInGame = 100;
-    public static int colorMode = 1;
-    public static int rewardAmount = 10;
-    public static int xpReward = 100;
+    public int totalPointsInGame = 100; //los puntos necesarios para pasarse el nivel
+    public static int colorMode = 1; //el tipo de modo
+    public static int rewardAmount = 10; //la currency que se le da
+    public static int xpReward = 3; //la experiencia/estrellitas
 
     public static int totalBlueCurrency1 = 0;
     public static int totalYellowCurrency2 = 0;
@@ -74,9 +75,9 @@ public class GameManager : MonoBehaviour
 
     public void CheckLifes()
     {
-        if (life > 0)
+        if (currentLife > 0)
         {
-            life--;
+            currentLife--;
         }
     }
 
@@ -111,6 +112,8 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(nameScene);
     }
+
+    
     
     public static void AddCurrencyAndXp()
     {

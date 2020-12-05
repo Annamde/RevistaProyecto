@@ -10,7 +10,11 @@ public class Mode1Script : MonoBehaviour
     public Canvas canvasGO;
 
     [Header("Text")]
-    public Text lifeText;
+    public Text lifeText; //las vidas generales
+    public Text currencyText; //canvas win
+    public Text starText; //canvas win
+    public Text currentPointText; //escena normal
+    public Text maxPoints; // escena normal
 
 
     // Start is called before the first frame update
@@ -18,16 +22,22 @@ public class Mode1Script : MonoBehaviour
     {
         canvasGO.enabled = false;
         canvasWIN.enabled = false;
+        GameManager.currentLife = GameManager.life;
     }
 
     // Update is called once per frame
     void Update()
     {
         print(GameManager.addedCurrency);
-        GameManager.Instance.SetText(lifeText, GameManager.life);
+        GameManager.Instance.SetText(lifeText, GameManager.currentLife);
+        GameManager.Instance.SetText(currentPointText, GameManager.currentPoints);
+        GameManager.Instance.SetText(maxPoints, GameManager.Instance.totalPointsInGame);
+        
         if(GameManager.currentPoints >= GameManager.Instance.totalPointsInGame)
         {
             GameManager.EnableCanvas(canvasWIN);
+            GameManager.Instance.SetText(currencyText, GameManager.rewardAmount);
+            GameManager.Instance.SetText(starText, GameManager.xpReward);
 
             if (!GameManager.addedCurrency)
             {
@@ -36,7 +46,7 @@ public class Mode1Script : MonoBehaviour
             }
         }
 
-        if(GameManager.life <= 0)
+        if(GameManager.currentLife <= 0)
         {
             GameManager.EnableCanvas(canvasGO);
         }
