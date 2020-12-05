@@ -13,7 +13,13 @@ public class MenuManagerScript : MonoBehaviour
     public Text orangeText6;
     public Text purpleText7;
 
-    public Text xpPointsText;
+    public Text xpText1;
+    public Text xpText2;
+    public Text xpText3;
+    public Text xpText4;
+    public Text xpText5;
+    public Text xpText6;
+    public Text xpText7;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +46,12 @@ public class MenuManagerScript : MonoBehaviour
     }
     public void UpdateXpText()
     {
-        xpPointsText.text = GameManager.xpPointsTotal.ToString();
+        xpText1.text = GameManager.totalXpBlue1.ToString();
+        xpText2.text = GameManager.totalXpYellow2.ToString();
+        xpText3.text = GameManager.totalXpPink3.ToString();
+        xpText4.text = GameManager.totalXpWhite4.ToString();
+        xpText5.text = GameManager.totalXpGreen5.ToString();
+        xpText6.text = GameManager.totalXpOrange6.ToString();
+        xpText7.text = GameManager.totalXpPurple7.ToString();
     }
 }

@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //print(currentPoints + "   " + totalPointsInGame);
-        print(totalBlueCurrency1 + " " + totalYellowCurrency2 + " " + totalPinkCurrency3 + " " + totalWhiteCurrency4 + " " + totalGreenCurrency5 + " " + totalOrangeCurrency6 + " " + totalPurpleCurrency7);
+        print(totalXpBlue1);
     }
 
     public void ResetLifes(int num)
@@ -123,31 +123,31 @@ public class GameManager : MonoBehaviour
         {
             case 1:
                 totalBlueCurrency1 += rewardAmount;
-                totalXpBlue1 += xpReward;
+                totalXpBlue1 += StaticFunctions.CalculateStars();
                 break;
             case 2:
                 totalYellowCurrency2 += rewardAmount;
-                totalXpYellow2 += xpReward;
+                totalXpYellow2 += StaticFunctions.CalculateStars();
                 break;
             case 3:
                 totalPinkCurrency3 += rewardAmount;
-                totalXpPink3 += xpReward;
+                totalXpPink3 += StaticFunctions.CalculateStars();
                 break;
             case 4:
                 totalWhiteCurrency4 += rewardAmount;
-                totalXpWhite4 += xpReward;
+                totalXpWhite4 += StaticFunctions.CalculateStars();
                 break;
             case 5:
                 totalGreenCurrency5 += rewardAmount;
-                totalXpGreen5 += xpReward;
+                totalXpGreen5 += StaticFunctions.CalculateStars();
                 break;
             case 6:
                 totalOrangeCurrency6 += rewardAmount;
-                totalXpOrange6 += xpReward;
+                totalXpOrange6 += StaticFunctions.CalculateStars();
                 break;
             case 7:
                 totalPurpleCurrency7 += rewardAmount;
-                totalXpPurple7 += xpReward;
+                totalXpPurple7 += StaticFunctions.CalculateStars();
                 break;
         }
     }

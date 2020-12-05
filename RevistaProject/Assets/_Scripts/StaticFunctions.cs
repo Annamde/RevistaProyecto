@@ -41,4 +41,22 @@ public class StaticFunctions : MonoBehaviour
         GameManager.currentLife = GameManager.life;
     }
 
+    public static int CalculateStars()
+    {
+        float percentage = ((float)GameManager.currentLife / (float)GameManager.life) * 100.0f;
+
+        if (percentage <= 33.0f)
+        {
+            return 1;
+        }
+        else if (percentage <= 66.0f)
+        {
+            return 2;
+        }
+        else
+        {
+            return 3;
+        }
+    }
+
 }
