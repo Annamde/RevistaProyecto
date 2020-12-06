@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class StaticFunctions : MonoBehaviour
 {
+
+
+
+
     public void ChangeScene(string nameScene)
     {
         Time.timeScale = 1;
@@ -31,6 +35,14 @@ public class StaticFunctions : MonoBehaviour
     public void SetXpRewardAmount(int xp)
     {
         GameManager.xpReward = xp;
+    }
+    public void ChakrasMode1Type1(int counterType1) //asigna los chakras para el modo 1 del tipo 1 
+    {
+        GameManager.charkrasMode1 = counterType1;
+    }
+    public void OtherChakrasMode1(int counterOther) //asigna los demas chakras para el modo 1 que no son del tipo 1 (el que se tiene que aprender el jugador)
+    {
+        GameManager.otherChakrasMode1 = counterOther;
     }
 
     public void RetryLevel()

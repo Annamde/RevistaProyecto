@@ -36,22 +36,22 @@ public class MenuManagerScript : MonoBehaviour
 
     public void UpdateCurrencyText()
     {
-        blueText1.text = GameManager.totalBlueCurrency1.ToString();
-        yellowText2.text = GameManager.totalYellowCurrency2.ToString();
-        pinkText3.text = GameManager.totalPinkCurrency3.ToString();
-        whiteText4.text = GameManager.totalWhiteCurrency4.ToString();
-        greenText5.text = GameManager.totalGreenCurrency5.ToString();
-        orangeText6.text = GameManager.totalOrangeCurrency6.ToString();
-        purpleText7.text = GameManager.totalPurpleCurrency7.ToString();
+        GameManager.SetText(blueText1, GameManager.totalBlueCurrency1);
+        GameManager.SetText(yellowText2, GameManager.totalYellowCurrency2);
+        GameManager.SetText(pinkText3, GameManager.totalPinkCurrency3);
+        GameManager.SetText(whiteText4, GameManager.totalWhiteCurrency4);
+        GameManager.SetText(greenText5, GameManager.totalGreenCurrency5);
+        GameManager.SetText(orangeText6, GameManager.totalOrangeCurrency6);
+        GameManager.SetText(purpleText7, GameManager.totalPurpleCurrency7);
     }
     public void UpdateXpText()
     {
-        xpText1.text = GameManager.totalXpBlue1.ToString();
-        xpText2.text = GameManager.totalXpYellow2.ToString();
-        xpText3.text = GameManager.totalXpPink3.ToString();
-        xpText4.text = GameManager.totalXpWhite4.ToString();
-        xpText5.text = GameManager.totalXpGreen5.ToString();
-        xpText6.text = GameManager.totalXpOrange6.ToString();
-        xpText7.text = GameManager.totalXpPurple7.ToString();
+        GameManager.SetText(xpText1, GameManager.totalXpBlue1);
+        GameManager.SetText(xpText2, GameManager.totalXpYellow2);
+        GameManager.SetText(xpText3, GameManager.totalXpPink3);
+        GameManager.SetText(xpText4, GameManager.totalXpWhite4);
+        GameManager.SetText(xpText5, GameManager.totalXpGreen5);
+        GameManager.SetText(xpText6, GameManager.totalXpOrange6);
+        GameManager.SetText(xpText7, GameManager.totalXpPurple7);
     }
 }

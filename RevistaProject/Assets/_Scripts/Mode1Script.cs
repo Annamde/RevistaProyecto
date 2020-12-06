@@ -28,15 +28,15 @@ public class Mode1Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameManager.Instance.SetText(lifeText, GameManager.currentLife);
-        GameManager.Instance.SetText(currentPointText, GameManager.currentPoints);
-        GameManager.Instance.SetText(maxPoints, GameManager.Instance.totalPointsInGame);
+        GameManager.SetText(lifeText, GameManager.currentLife);
+        GameManager.SetText(currentPointText, GameManager.currentPoints);
+        GameManager.SetText(maxPoints, GameManager.Instance.totalPointsInGame);
         
         if(GameManager.currentPoints >= GameManager.Instance.totalPointsInGame)
         {
             GameManager.EnableCanvas(canvasWIN);
-            GameManager.Instance.SetText(currencyText, GameManager.rewardAmount);
-            GameManager.Instance.SetText(starText, StaticFunctions.CalculateStars());
+            GameManager.SetText(currencyText, GameManager.rewardAmount);
+            GameManager.SetText(starText, StaticFunctions.CalculateStars());
 
             if (!GameManager.addedCurrency)
             {

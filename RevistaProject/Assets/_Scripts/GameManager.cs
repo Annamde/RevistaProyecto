@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public static int colorMode = 1; //el tipo de modo
     public static int rewardAmount = 10; //la currency que se le da
     public static int xpReward = 3; //la experiencia/estrellitas
+    public static int charkrasMode1 = 1; //los chakras del tipo1 para el modo1
+    public static int otherChakrasMode1 = 2; //chakras de otro tipo para el modo 1
 
     public static int totalBlueCurrency1 = 0;
     public static int totalYellowCurrency2 = 0;
@@ -65,7 +67,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //print(currentPoints + "   " + totalPointsInGame);
-        print(totalXpBlue1);
+        //print(totalXpBlue1);
     }
 
     public void ResetLifes(int num)
@@ -90,7 +92,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void SetText(Text temp, int num)
+    public static void SetText(Text temp, int num)
     {
         temp.text = num.ToString();
     }
