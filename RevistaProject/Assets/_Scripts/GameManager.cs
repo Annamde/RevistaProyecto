@@ -198,6 +198,25 @@ public class GameManager : MonoBehaviour
     
     public void ResetXpCurrency()
     {
-        print("patata");
+        SetValuePlayerPrefs("totalBlueCurrency1", 0);
+        SetValuePlayerPrefs("totalXpBlue1", 0);
+        SetValuePlayerPrefs("totalYellowCurrency2", 0);
+        SetValuePlayerPrefs("totalXpYellow2", 0);
+        SetValuePlayerPrefs("totalPinkCurrency3", 0);
+        SetValuePlayerPrefs("totalXpPink3", 0);
+        SetValuePlayerPrefs("totalWhiteCurrency4", 0);
+        SetValuePlayerPrefs("totalXpWhite4", 0);
+        SetValuePlayerPrefs("totalGreenCurrency5", 0);
+        SetValuePlayerPrefs("totalXpGreen5", 0);
+        SetValuePlayerPrefs("totalOrangeCurrency6", 0);
+        SetValuePlayerPrefs("totalXpOrange6", 0);
+        SetValuePlayerPrefs("totalPurpleCurrency7", 0);
+        SetValuePlayerPrefs("totalXpPurple7", 0);
+
+    }
+
+    public void SetValuePlayerPrefs(string name, int num)
+    {
+        PlayerPrefs.SetInt(name, num);
     }
 }
