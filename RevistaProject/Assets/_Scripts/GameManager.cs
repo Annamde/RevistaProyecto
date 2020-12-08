@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
@@ -55,6 +56,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        SetXPandCurrency();
     }
 
     // Start is called before the first frame update
@@ -68,6 +71,7 @@ public class GameManager : MonoBehaviour
     {
         //print(currentPoints + "   " + totalPointsInGame);
         //print(totalXpBlue1);
+        print(PlayerPrefs.GetInt("totalXpBlue1", totalXpBlue1));
     }
 
     public void ResetLifes(int num)
@@ -126,31 +130,74 @@ public class GameManager : MonoBehaviour
             case 1:
                 totalBlueCurrency1 += rewardAmount;
                 totalXpBlue1 += StaticFunctions.CalculateStars();
+                PlayerPrefs.SetInt("totalBlueCurrency1", totalBlueCurrency1);
+                PlayerPrefs.SetInt("totalXpBlue1", totalXpBlue1);
                 break;
             case 2:
                 totalYellowCurrency2 += rewardAmount;
                 totalXpYellow2 += StaticFunctions.CalculateStars();
+                PlayerPrefs.SetInt("totalYellowCurrency2", totalYellowCurrency2);
+                PlayerPrefs.SetInt("totalXpYellow2", totalXpYellow2);
                 break;
             case 3:
                 totalPinkCurrency3 += rewardAmount;
                 totalXpPink3 += StaticFunctions.CalculateStars();
+                PlayerPrefs.SetInt("totalPinkCurrency3", totalPinkCurrency3);
+                PlayerPrefs.SetInt("totalXpPink3", totalXpPink3);
                 break;
             case 4:
                 totalWhiteCurrency4 += rewardAmount;
                 totalXpWhite4 += StaticFunctions.CalculateStars();
+                PlayerPrefs.SetInt("totalWhiteCurrency4", totalWhiteCurrency4);
+                PlayerPrefs.SetInt("totalXpWhite4", totalXpWhite4);
                 break;
             case 5:
                 totalGreenCurrency5 += rewardAmount;
                 totalXpGreen5 += StaticFunctions.CalculateStars();
+                PlayerPrefs.SetInt("totalGreenCurrency5", totalGreenCurrency5);
+                PlayerPrefs.SetInt("totalXpGreen5", totalXpGreen5);
                 break;
             case 6:
                 totalOrangeCurrency6 += rewardAmount;
                 totalXpOrange6 += StaticFunctions.CalculateStars();
+                PlayerPrefs.SetInt("totalOrangeCurrency6", totalOrangeCurrency6);
+                PlayerPrefs.SetInt("totalXpOrange6", totalXpOrange6);
                 break;
             case 7:
                 totalPurpleCurrency7 += rewardAmount;
                 totalXpPurple7 += StaticFunctions.CalculateStars();
+                PlayerPrefs.SetInt("totalPurpleCurrency7", totalPurpleCurrency7);
+                PlayerPrefs.SetInt("totalXpPurple7", totalXpPurple7);
                 break;
         }
+    }
+
+    public void SetXPandCurrency()
+    {
+        totalBlueCurrency1 = PlayerPrefs.GetInt("totalBlueCurrency1");
+        totalXpBlue1 = PlayerPrefs.GetInt("totalXpBlue1");
+
+        totalYellowCurrency2 = PlayerPrefs.GetInt("totalYellowCurrency2");
+        totalXpYellow2 = PlayerPrefs.GetInt("totalXpYellow2");
+
+        totalPinkCurrency3 = PlayerPrefs.GetInt("totalPinkCurrency3");
+        totalXpPink3 = PlayerPrefs.GetInt("totalXpPink3");
+
+        totalWhiteCurrency4 = PlayerPrefs.GetInt("totalWhiteCurrency4");
+        totalXpWhite4 = PlayerPrefs.GetInt("totalXpWhite4");
+
+        totalGreenCurrency5 = PlayerPrefs.GetInt("totalGreenCurrency5");
+        totalXpGreen5 = PlayerPrefs.GetInt("totalXpGreen5");
+
+        totalOrangeCurrency6 = PlayerPrefs.GetInt("totalOrangeCurrency6");
+        totalXpOrange6 = PlayerPrefs.GetInt("totalXpOrange6");
+
+        totalPurpleCurrency7 = PlayerPrefs.GetInt("totalPurpleCurrency7");
+        totalXpPurple7 = PlayerPrefs.GetInt("totalXpPurple7");
+    }
+    
+    public void ResetXpCurrency()
+    {
+        print("patata");
     }
 }

@@ -75,7 +75,8 @@ public class LockedButtonScript : MonoBehaviour
         switch (starColorNeeded)
         {
             case 1:
-                buttonText.text = (xpNeeded - GameManager.totalXpBlue1).ToString();
+                GameManager.SetText(buttonText, xpNeeded - GameManager.totalXpBlue1);
+                //buttonText.text = (xpNeeded - GameManager.totalXpBlue1).ToString();
                 break;
             case 2:
                 buttonText.text = (xpNeeded - GameManager.totalXpYellow2).ToString();
