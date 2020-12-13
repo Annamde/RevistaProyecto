@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mode1ChakrasScirpt : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 
     public int totalPoints; //puntos necesarios por nivel
 
+    public GameObject correctTempHole;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        print("CORRECT: " + correctCheck + "    WRONG: " + wrongCheck);
     }
 
     void OnMouseDrag()
@@ -31,11 +34,12 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         transform.position = objPosition;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == this.tag)
         {
             correctCheck = true;
+            correctTempHole = collision.gameObject;
         }
         else if (collision.gameObject.tag == "End")
         {
@@ -51,6 +55,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         if (collision.gameObject.tag == this.tag) 
         {
             correctCheck = false;
+            correctTempHole = null;
         }
         else if (collision.gameObject.tag != this.tag)
         {
@@ -61,8 +66,12 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     {
         if (correctCheck) //si esta colisionando con una correcta y una incorrecta a la vez, se le da prioridad a la correcta (creo)
         {
-            GameManager.Instance.CheckPoints();
-            Destroy(this.gameObject);
+            if (!correctTempHole.GetComponent<HuecoScript>().isCompleted)
+            {
+                GameManager.Instance.CheckPoints();
+                correctTempHole.GetComponent<HuecoScript>().AddProgress();
+                Destroy(this.gameObject);
+            }
         }
         else if (wrongCheck)
         {

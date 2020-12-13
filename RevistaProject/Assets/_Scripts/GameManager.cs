@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
     {
         //print(currentPoints + "   " + totalPointsInGame);
         //print(totalXpBlue1);
-        print(PlayerPrefs.GetInt("totalXpBlue1", totalXpBlue1));
+        //print(PlayerPrefs.GetInt("totalXpBlue1", totalXpBlue1));
     }
 
     public void ResetLifes(int num)
