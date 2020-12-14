@@ -11,7 +11,7 @@ public class HuecoScript : MonoBehaviour
     public bool isCompleted = false;
 
     public Image filler;
-    public Image completedImage;
+    public Image completedImage; //imagen con el chakra o la barra
     
     void Start()
     {

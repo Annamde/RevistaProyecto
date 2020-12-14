@@ -13,25 +13,44 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 
     public int totalPoints; //puntos necesarios por nivel
 
+    public float chacDistance;
+
     public GameObject correctTempHole;
+    public GameObject closeTempHole;
+
+    public Camera cam;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        chacDistance = 60.0f;
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        print("CORRECT: " + correctCheck + "    WRONG: " + wrongCheck);
+        if (closeTempHole != null)
+        {
+            print(Input.mousePosition + "   " + cam.WorldToScreenPoint(closeTempHole.transform.position));
+            if (Vector3.Distance(cam.WorldToScreenPoint(closeTempHole.transform.position), Input.mousePosition) > chacDistance)
+            {
+                closeTempHole = null;
+            }
+        }
     }
 
     void OnMouseDrag()
     {
-        Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -1 * (Camera.main.transform.position.z));
-        Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        transform.position = objPosition;
+        if (closeTempHole != null)
+        {
+            transform.position = closeTempHole.transform.position;
+        }
+        else {
+            Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -1 * (Camera.main.transform.position.z));
+            Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            transform.position = objPosition;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -49,6 +68,12 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         {
             wrongCheck = true;
         }
+
+        print(Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition));
+        if (collision.gameObject.tag.Contains("Type") && (Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition) <= chacDistance))
+        {
+            closeTempHole = collision.gameObject;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -60,6 +85,11 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         else if (collision.gameObject.tag != this.tag)
         {
             wrongCheck = false;
+        }
+
+        if (collision.gameObject.tag.Contains("Type"))
+        {
+            closeTempHole = null;
         }
     }
     private void OnMouseUp()
