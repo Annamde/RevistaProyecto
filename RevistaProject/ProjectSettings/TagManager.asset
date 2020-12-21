@@ -12,6 +12,7 @@ TagManager:
   - Type5
   - Type6
   - Type7
+  - TypeWrong
   layers:
   - Default
   - TransparentFX

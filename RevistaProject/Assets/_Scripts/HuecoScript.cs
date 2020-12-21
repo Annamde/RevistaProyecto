@@ -20,12 +20,15 @@ public class HuecoScript : MonoBehaviour
     
     void Update()
     {
-        UpdateFiller();
-
-        if (CheckCompleted())
+        if (this.tag != "TypeWrong")
         {
-            //enable la completedImage
-            isCompleted = true;
+            UpdateFiller();
+
+            if (CheckCompleted())
+            {
+                //enable la completedImage
+                isCompleted = true;
+            }
         }
     }
 

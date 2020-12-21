@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Mode1ChakrasScirpt : MonoBehaviour
 {
-    public int speed = 3;
+    public int speed = 1;
     public SpriteRenderer mySprite;
 
     private bool correctCheck = false;
