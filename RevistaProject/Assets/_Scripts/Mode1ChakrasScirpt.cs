@@ -69,7 +69,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
             wrongCheck = true;
         }
 
-        print(Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition));
+       // print(Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition));
         if (collision.gameObject.tag.Contains("Type") && (Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition) <= chacDistance))
         {
             closeTempHole = collision.gameObject;
