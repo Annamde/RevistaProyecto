@@ -5,10 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class StaticFunctions : MonoBehaviour
 {
-
-
-
-
     public void ChangeScene(string nameScene)
     {
         Time.timeScale = 1;
@@ -43,6 +39,15 @@ public class StaticFunctions : MonoBehaviour
     public void OtherChakrasMode1(int counterOther) //asigna los demas chakras para el modo 1 que no son del tipo 1 (el que se tiene que aprender el jugador)
     {
         GameManager.otherChakrasMode1 = counterOther;
+    }
+
+    public void CorrectTreeTime(float time) //asigna el valor del tiempo visible del arbol bueno
+    {
+        GameManager.treeCorrectTime = time;
+    }
+    public void TempTreeTime(float time) //asigna el valor del tiempo que tarda en cargarse la ayuda del arbol visible
+    {
+        GameManager.tempTree = time;
     }
 
     public void RetryLevel()
