@@ -13,6 +13,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 
     public int totalPoints; //puntos necesarios por nivel
 
+    public List<GameObject> closeHoleList = new List<GameObject>();
     public float chacDistance;
 
     public GameObject correctTempHole;
@@ -38,6 +39,35 @@ public class Mode1ChakrasScirpt : MonoBehaviour
                 closeTempHole = null;
             }
         }
+
+        if (FindClosest() != null)
+        {
+            if ((Vector3.Distance(cam.WorldToScreenPoint(FindClosest().transform.position), Input.mousePosition) <= chacDistance))
+            {
+                closeTempHole = FindClosest();
+                print("AAAAAAAAAAAHHAHHA");
+            }
+        }
+    }
+
+    private GameObject FindClosest()
+    {
+        GameObject closest = null;
+        float closestDistanceSqr = Mathf.Infinity;
+        Vector3 currentPosition = Input.mousePosition;
+
+        foreach(GameObject potentialClosest in closeHoleList)
+        {
+            Vector3 directionToTarget = cam.WorldToScreenPoint(potentialClosest.transform.position) - currentPosition;
+            float dSqrToTarget = directionToTarget.sqrMagnitude;
+            if(dSqrToTarget < closestDistanceSqr)
+            {
+                closestDistanceSqr = dSqrToTarget;
+                closest = potentialClosest;
+            }
+        }
+
+        return closest;
     }
 
     void OnMouseDrag()
@@ -50,6 +80,14 @@ public class Mode1ChakrasScirpt : MonoBehaviour
             Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -1 * (Camera.main.transform.position.z));
             Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
             transform.position = objPosition;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Contains("Type"))
+        {
+            closeHoleList.Add(collision.gameObject);
         }
     }
 
@@ -69,14 +107,19 @@ public class Mode1ChakrasScirpt : MonoBehaviour
             wrongCheck = true;
         }
 
-       // print(Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition));
-        if (collision.gameObject.tag.Contains("Type") && (Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition) <= chacDistance))
-        {
-            closeTempHole = collision.gameObject;
-        }
+        // print(Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition));
+        //if (collision.gameObject.tag.Contains("Type") && (Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition) <= chacDistance))
+        //{
+        //    closeTempHole = collision.gameObject;
+        //}
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.gameObject.tag.Contains("Type") && closeHoleList.Contains(collision.gameObject))
+        {
+            closeHoleList.Remove(collision.gameObject);
+        }
+
         if (collision.gameObject.tag == this.tag) 
         {
             correctCheck = false;
@@ -87,10 +130,10 @@ public class Mode1ChakrasScirpt : MonoBehaviour
             wrongCheck = false;
         }
 
-        if (collision.gameObject.tag.Contains("Type"))
-        {
-            closeTempHole = null;
-        }
+        //if (collision.gameObject.tag.Contains("Type"))
+        //{
+        //    closeTempHole = null;
+        //}
     }
     private void OnMouseUp()
     {
