@@ -30,7 +30,6 @@ public class TreeButtonScript : MonoBehaviour
         }
         else if(tempTree.fillAmount < 1)
         {
-            print("OOOOOOOOOO");
             helpCounter += Time.deltaTime;
             tempTree.fillAmount = (helpCounter * 100 / GameManager.tempTree) / 100;
             treeButton.enabled = false;
@@ -49,5 +48,16 @@ public class TreeButtonScript : MonoBehaviour
             helpCounter = 0;
             counter = 0;
         }
+    }
+
+    public void ResetTemporizador()
+    {
+        myTree.enabled = false;
+        myPanel.enabled = false;
+        temporizador.enabled = false;
+        temporizador.fillAmount = 1;
+        tempTree.fillAmount = 0;
+        helpCounter = 0;
+        counter = 0;
     }
 }

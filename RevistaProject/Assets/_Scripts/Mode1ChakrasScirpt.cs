@@ -45,7 +45,6 @@ public class Mode1ChakrasScirpt : MonoBehaviour
             if ((Vector3.Distance(cam.WorldToScreenPoint(FindClosest().transform.position), Input.mousePosition) <= chacDistance))
             {
                 closeTempHole = FindClosest();
-                print("AAAAAAAAAAAHHAHHA");
             }
         }
     }
