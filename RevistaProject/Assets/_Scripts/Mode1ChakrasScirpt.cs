@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Mode1ChakrasScirpt : MonoBehaviour
 {
-    public int speed = 1;
     public SpriteRenderer mySprite;
 
     private bool correctCheck = false;
@@ -21,11 +20,17 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 
     public Camera cam;
 
+    Rigidbody2D myRb;
+    public float speed = 1.5f;
+
+
     // Start is called before the first frame update
     void Start()
     {
         chacDistance = 60.0f;
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+
+        myRb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -47,6 +52,16 @@ public class Mode1ChakrasScirpt : MonoBehaviour
                 closeTempHole = FindClosest();
             }
         }
+
+        Movement();
+    }
+
+    public void Movement()
+    {
+        Vector2 movement = new Vector2(0,-1);
+        movement *= speed*Time.deltaTime;
+
+        this.transform.Translate(movement);
     }
 
     private GameObject FindClosest()
