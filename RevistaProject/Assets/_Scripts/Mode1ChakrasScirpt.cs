@@ -38,7 +38,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     {
         if (closeTempHole != null)
         {
-            print(Input.mousePosition + "   " + cam.WorldToScreenPoint(closeTempHole.transform.position));
+            //print(Input.mousePosition + "   " + cam.WorldToScreenPoint(closeTempHole.transform.position));
             if (Vector3.Distance(cam.WorldToScreenPoint(closeTempHole.transform.position), Input.mousePosition) > chacDistance)
             {
                 closeTempHole = null;
@@ -59,7 +59,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     public void Movement()
     {
         Vector2 movement = new Vector2(0,-1);
-        movement *= speed*Time.deltaTime;
+        movement *= speed * Time.deltaTime;
 
         this.transform.Translate(movement);
     }

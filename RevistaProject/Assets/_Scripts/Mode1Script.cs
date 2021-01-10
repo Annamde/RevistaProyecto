@@ -34,6 +34,7 @@ public class Mode1Script : MonoBehaviour
         
         if(GameManager.currentPoints >= GameManager.Instance.totalPointsInGame)
         {
+            print("CANVAS WINNNN");
             GameManager.EnableCanvas(canvasWIN);
             GameManager.SetText(currencyText, GameManager.rewardAmount);
             GameManager.SetText(starText, StaticFunctions.CalculateStars());
