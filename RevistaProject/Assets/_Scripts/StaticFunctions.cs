@@ -12,23 +12,23 @@ public class StaticFunctions : MonoBehaviour
         GameManager.addedCurrency = false;
         SceneManager.LoadScene(nameScene);
     }
-    public void SetLife(int vidas)
+    public void SetLife(int vidas) //las vidas del nivel
     {
        GameManager.life = vidas;
     }
-    public void SetTotalPoints(int totalPoints)
+    public void SetTotalPoints(int totalPoints) //los puntos necesarios para pasarse el nivel
     {
        GameManager.Instance.totalPointsInGame = totalPoints;
     }
-    public void SetMode(int mode)
+    public void SetMode(int mode) 
     {
        GameManager.colorMode = mode;
     }
-    public void SetRewardAmount(int reward)
+    public void SetRewardAmount(int reward) //la currency que se le da
     {
         GameManager.rewardAmount = reward;
     }
-    public void SetXpRewardAmount(int xp)
+    public void SetXpRewardAmount(int xp) //las esterllas que se le dan
     {
         GameManager.xpReward = xp;
     }

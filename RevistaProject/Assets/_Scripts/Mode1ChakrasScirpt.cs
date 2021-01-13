@@ -23,6 +23,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     Rigidbody2D myRb;
     public float speed = 1.5f;
 
+    bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -53,7 +54,10 @@ public class Mode1ChakrasScirpt : MonoBehaviour
             }
         }
 
-        Movement();
+        if (canMove)
+        {
+            Movement();
+        }
     }
 
     public void Movement()
@@ -86,6 +90,8 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 
     void OnMouseDrag()
     {
+        canMove = false;
+
         if (closeTempHole != null)
         {
             transform.position = closeTempHole.transform.position;
@@ -151,6 +157,8 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     }
     private void OnMouseUp()
     {
+        canMove = true;
+
         if (correctCheck) //si esta colisionando con una correcta y una incorrecta a la vez, se le da prioridad a la correcta (creo)
         {
             if (!correctTempHole.GetComponent<HuecoScript>().isCompleted)
