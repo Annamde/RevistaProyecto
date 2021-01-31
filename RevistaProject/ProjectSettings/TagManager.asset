@@ -13,6 +13,7 @@ TagManager:
   - Type6
   - Type7
   - TypeWrong
+  - TypeBlueBar
   layers:
   - Default
   - TransparentFX
