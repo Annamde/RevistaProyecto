@@ -9,6 +9,7 @@ public class HuecoScript : MonoBehaviour
     public bool isLine = false;
 
     public bool isCompleted = false;
+    public bool pointsAdded = false;
 
     public Image filler;
     public Image completedImage; //imagen con el chakra o la barra
@@ -26,6 +27,11 @@ public class HuecoScript : MonoBehaviour
 
             if (CheckCompleted())
             {
+                if (!pointsAdded)
+                {
+                    GameManager.Instance.CheckPoints();
+                    pointsAdded = true;
+                }
                 //enable la completedImage
                 isCompleted = true;
             }

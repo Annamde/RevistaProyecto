@@ -163,7 +163,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         {
             if (!correctTempHole.GetComponent<HuecoScript>().isCompleted)
             {
-                GameManager.Instance.CheckPoints();
+                //GameManager.Instance.CheckPoints();
                 correctTempHole.GetComponent<HuecoScript>().AddProgress();
                 Destroy(this.gameObject);
             }
