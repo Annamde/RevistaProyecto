@@ -32,7 +32,6 @@ public class HuecoScript : MonoBehaviour
                     GameManager.Instance.CheckPoints();
                     pointsAdded = true;
                 }
-                //enable la completedImage
                 isCompleted = true;
             }
         }
