@@ -43,7 +43,6 @@ public class OpenWithCode : MonoBehaviour
             _warningText.SetActive(true);
             ForceCanvas();
         }
-        Debug.Log(_inputField.text);
         _inputField.text = "";
     }
 
@@ -51,7 +50,6 @@ public class OpenWithCode : MonoBehaviour
     {
         w = new WWW("https://docs.google.com/document/d/10WH7W5YBWqR1MkjvXna_7LPnzYovMWH2gG7OvfYRa5M/edit?usp=sharing");
         yield return w;
-        Debug.Log(w.text);
         DecideIfOpenApp();
     }
 
