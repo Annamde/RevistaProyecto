@@ -133,43 +133,43 @@ public class GameManager : MonoBehaviour
         {
             case 1:
                 totalBlueCurrency1 += rewardAmount;
-                totalXpBlue1 += StaticFunctions.CalculateStars();
+                totalXpBlue1 += (int)StaticFunctions.CalculateStars();
                 PlayerPrefs.SetInt("totalBlueCurrency1", totalBlueCurrency1);
                 PlayerPrefs.SetInt("totalXpBlue1", totalXpBlue1);
                 break;
             case 2:
                 totalYellowCurrency2 += rewardAmount;
-                totalXpYellow2 += StaticFunctions.CalculateStars();
+                totalXpYellow2 += (int)StaticFunctions.CalculateStars();
                 PlayerPrefs.SetInt("totalYellowCurrency2", totalYellowCurrency2);
                 PlayerPrefs.SetInt("totalXpYellow2", totalXpYellow2);
                 break;
             case 3:
                 totalPinkCurrency3 += rewardAmount;
-                totalXpPink3 += StaticFunctions.CalculateStars();
+                totalXpPink3 += (int)StaticFunctions.CalculateStars();
                 PlayerPrefs.SetInt("totalPinkCurrency3", totalPinkCurrency3);
                 PlayerPrefs.SetInt("totalXpPink3", totalXpPink3);
                 break;
             case 4:
                 totalWhiteCurrency4 += rewardAmount;
-                totalXpWhite4 += StaticFunctions.CalculateStars();
+                totalXpWhite4 += (int)StaticFunctions.CalculateStars();
                 PlayerPrefs.SetInt("totalWhiteCurrency4", totalWhiteCurrency4);
                 PlayerPrefs.SetInt("totalXpWhite4", totalXpWhite4);
                 break;
             case 5:
                 totalGreenCurrency5 += rewardAmount;
-                totalXpGreen5 += StaticFunctions.CalculateStars();
+                totalXpGreen5 += (int)StaticFunctions.CalculateStars();
                 PlayerPrefs.SetInt("totalGreenCurrency5", totalGreenCurrency5);
                 PlayerPrefs.SetInt("totalXpGreen5", totalXpGreen5);
                 break;
             case 6:
                 totalOrangeCurrency6 += rewardAmount;
-                totalXpOrange6 += StaticFunctions.CalculateStars();
+                totalXpOrange6 += (int)StaticFunctions.CalculateStars();
                 PlayerPrefs.SetInt("totalOrangeCurrency6", totalOrangeCurrency6);
                 PlayerPrefs.SetInt("totalXpOrange6", totalXpOrange6);
                 break;
             case 7:
                 totalPurpleCurrency7 += rewardAmount;
-                totalXpPurple7 += StaticFunctions.CalculateStars();
+                totalXpPurple7 += (int)StaticFunctions.CalculateStars();
                 PlayerPrefs.SetInt("totalPurpleCurrency7", totalPurpleCurrency7);
                 PlayerPrefs.SetInt("totalXpPurple7", totalXpPurple7);
                 break;

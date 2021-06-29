@@ -36,7 +36,7 @@ public class Mode1Script : MonoBehaviour
         {
             GameManager.EnableCanvas(canvasWIN);
             GameManager.SetText(currencyText, GameManager.rewardAmount);
-            GameManager.SetText(starText, StaticFunctions.CalculateStars());
+            GameManager.SetText(starText, (int)StaticFunctions.CalculateStars());
 
             if (!GameManager.addedCurrency)
             {

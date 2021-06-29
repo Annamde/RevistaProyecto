@@ -58,21 +58,21 @@ public class StaticFunctions : MonoBehaviour
         GameManager.currentLife = GameManager.life;
     }
 
-    public static int CalculateStars()
+    public static float CalculateStars()
     {
         float percentage = ((float)GameManager.currentLife / (float)GameManager.life) * 100.0f;
 
         if (percentage <= 33.0f)
         {
-            return 1;
+            return (float)GameManager.xpReward - ((float)GameManager.xpReward / 1.5f);
         }
         else if (percentage <= 66.0f)
         {
-            return 2;
+            return (float)GameManager.xpReward - ((float)GameManager.xpReward / 3.0f);
         }
         else
         {
-            return 3;
+            return (float)GameManager.xpReward;
         }
     }
 
