@@ -16,9 +16,13 @@ public class OpenWithCode : MonoBehaviour
 
     private WWW w;
 
-    public void Awake()
+    public void Start()
     {
         _warningText.SetActive(false);
+        if (!GameManager.Instance.IsFirtsOpen)
+        {
+            _canvasCode.enabled = false;
+        }
     }
 
     public void CheckCode()
@@ -44,6 +48,7 @@ public class OpenWithCode : MonoBehaviour
             ForceCanvas();
         }
         _inputField.text = "";
+        GameManager.Instance.IsFirtsOpen = false;
     }
 
     private IEnumerator Check()

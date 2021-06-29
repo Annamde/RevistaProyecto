@@ -45,6 +45,8 @@ public class GameManager : MonoBehaviour
 
     public static bool addedCurrency = false;
 
+    public bool IsFirtsOpen = true;
+
     private void Awake()
     {
         if (!created)
