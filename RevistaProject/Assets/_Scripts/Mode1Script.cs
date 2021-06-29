@@ -40,7 +40,6 @@ public class Mode1Script : MonoBehaviour
 
             if (!GameManager.addedCurrency)
             {
-                print("AÑADO LAS CURRENCIES");
                 GameManager.AddCurrencyAndXp();
                 GameManager.addedCurrency = true;
             }
