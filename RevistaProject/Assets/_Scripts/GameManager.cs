@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public static int otherChakrasMode1 = 2; //chakras de otro tipo para el modo 1
     public static float treeCorrectTime = 5; //el tiempo para ver el arbol correcto
     public static float tempTree = 15; //el tiempo que tarda en cargarse de nuevo el arbol
+    public static float chakraSpeed = 1; //la velocidad a la que cae el chakra
 
     public static int totalBlueCurrency1 = 0;
     public static int totalYellowCurrency2 = 0;

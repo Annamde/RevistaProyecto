@@ -58,6 +58,11 @@ public class StaticFunctions : MonoBehaviour
         GameManager.currentLife = GameManager.life;
     }
 
+    public void SetSpeedChakras(float speed) //asigna la velocidad a la que cae el chakra
+    {
+        GameManager.chakraSpeed = speed;
+    }
+
     public static float CalculateStars()
     {
         float percentage = ((float)GameManager.currentLife / (float)GameManager.life) * 100.0f;

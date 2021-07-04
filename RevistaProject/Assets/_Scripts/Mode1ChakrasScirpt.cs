@@ -32,6 +32,8 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
 
         myRb = GetComponent<Rigidbody2D>();
+
+        speed = GameManager.chakraSpeed;
     }
 
     // Update is called once per frame
@@ -64,6 +66,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     {
         Vector2 movement = new Vector2(0,-1);
         movement *= speed * Time.deltaTime;
+        Debug.Log(speed + "speeeeedddd" );
 
         this.transform.Translate(movement);
     }
