@@ -395,6 +395,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_GameOver (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6751243325275555981, guid: c71a40419ff0d3c4ab176ec15c3551de,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 545184283}
     - target: {fileID: 6751243325275555980, guid: c71a40419ff0d3c4ab176ec15c3551de,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -500,11 +505,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6751243325275555981, guid: c71a40419ff0d3c4ab176ec15c3551de,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 545184283}
     - target: {fileID: 6751243324360307956, guid: c71a40419ff0d3c4ab176ec15c3551de,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -4201,6 +4201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points4Chakra: 10
   totalPointsInGame: 100
+  IsFirtsOpen: 1
 --- !u!4 &758245564
 Transform:
   m_ObjectHideFlags: 0
@@ -5266,6 +5267,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_WIN (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6176494487241799133, guid: 1daaa7d432184514aab71902bfd41abc,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 545184283}
     - target: {fileID: 6176494487241799138, guid: 1daaa7d432184514aab71902bfd41abc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5371,11 +5377,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6176494487241799133, guid: 1daaa7d432184514aab71902bfd41abc,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 545184283}
     - target: {fileID: 6176494485581947558, guid: 1daaa7d432184514aab71902bfd41abc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5941,12 +5942,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chakrasType1:
   - {fileID: 3157172381353487675, guid: 814adea22bfea3c4b836850e027d61f7, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   initialTime: 1
   intervaltime: 2
   otherChakras:
