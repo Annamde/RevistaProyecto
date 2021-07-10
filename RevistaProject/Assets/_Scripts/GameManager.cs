@@ -51,6 +51,13 @@ public class GameManager : MonoBehaviour
 
 
     public static AudioSource audio;
+    public AudioSource aGeneral;
+    public static AudioSource audioChac;
+    public AudioSource aChac;
+    public static AudioSource audioGrab;
+    public AudioSource aGrab;
+    public static AudioSource audioCanvas;
+    public AudioSource aCanvas;
 
     public static AudioClip a1button;
     public AudioClip a1;
@@ -90,6 +97,10 @@ public class GameManager : MonoBehaviour
 
         SetXPandCurrency();
 
+        audio = aGeneral;
+        audioChac = aChac;
+        audioGrab = aGrab;
+        audioCanvas = aCanvas;
         a1button = a1;
         a2lockedButton = a2;
         a3grab = a3;
@@ -105,7 +116,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+        //audioGeneral = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

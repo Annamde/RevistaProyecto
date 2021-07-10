@@ -34,6 +34,10 @@ public class Mode1Script : MonoBehaviour
         
         if(GameManager.currentPoints >= GameManager.Instance.totalPointsInGame)
         {
+            GameManager.audioCanvas.Stop();
+            GameManager.audioCanvas.clip = GameManager.a8win;
+            GameManager.audioCanvas.Play();
+
             GameManager.EnableCanvas(canvasWIN);
             GameManager.SetText(currencyText, GameManager.rewardAmount);
             GameManager.SetText(starText, (int)StaticFunctions.CalculateStars());
@@ -47,6 +51,10 @@ public class Mode1Script : MonoBehaviour
 
         if(GameManager.currentLife <= 0)
         {
+            GameManager.audioCanvas.Stop();
+            GameManager.audioCanvas.clip = GameManager.a9gameover;
+            GameManager.audioCanvas.Play();
+
             GameManager.EnableCanvas(canvasGO);
         }
     }

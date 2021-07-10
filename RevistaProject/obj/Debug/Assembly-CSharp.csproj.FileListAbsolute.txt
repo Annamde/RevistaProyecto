@@ -284,3 +284,6 @@ D:\annad\Treballs\Altres\RevistaProyecto\RevistaProject\obj\Debug\Assembly-CShar
 D:\annad\Treballs\Altres\RevistaProyecto\RevistaProject\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\annad\Treballs\Altres\RevistaProyecto\RevistaProject\obj\Debug\Assembly-CSharp.dll
 D:\annad\Treballs\Altres\RevistaProyecto\RevistaProject\obj\Debug\Assembly-CSharp.pdb
+C:\Users\morkr\OneDrive\Documentos\AAMundoFeliz\RevistaProyecto\RevistaProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\morkr\OneDrive\Documentos\AAMundoFeliz\RevistaProyecto\RevistaProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\morkr\OneDrive\Documentos\AAMundoFeliz\RevistaProyecto\RevistaProject\obj\Debug\Assembly-CSharp.dll

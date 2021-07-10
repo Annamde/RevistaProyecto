@@ -26,6 +26,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     bool canMove = true;
 
     bool dragPlayed = false;
+    bool chacSoundDone = false;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         speed = GameManager.chakraSpeed;
 
         dragPlayed = false;
+        chacSoundDone = false;
     }
 
     // Update is called once per frame
@@ -56,6 +58,15 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         {
             if ((Vector3.Distance(cam.WorldToScreenPoint(FindClosest().transform.position), Input.mousePosition) <= chacDistance))
             {
+                if (!chacSoundDone)
+                {
+                    GameManager.audio.Stop(); //
+                    GameManager.audio.clip = GameManager.a4chac;
+                    GameManager.audio.Play();
+
+                    chacSoundDone = true;
+                }
+
                 closeTempHole = FindClosest();
             }
         }
@@ -100,7 +111,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 
         if (!dragPlayed)
         {
-            GameManager.audio.Stop();
+            GameManager.audio.Stop(); //
             GameManager.audio.clip = GameManager.a3grab;
             GameManager.audio.Play();
             dragPlayed = true;
@@ -111,6 +122,8 @@ public class Mode1ChakrasScirpt : MonoBehaviour
             transform.position = closeTempHole.transform.position;
         }
         else {
+            chacSoundDone = false;
+
             Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -1 * (Camera.main.transform.position.z));
             Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
             transform.position = objPosition;
@@ -181,17 +194,44 @@ public class Mode1ChakrasScirpt : MonoBehaviour
             {
                 //GameManager.Instance.CheckPoints();
                 correctTempHole.GetComponent<HuecoScript>().AddProgress();
+
+                if (correctTempHole.GetComponent<HuecoScript>().fullProgress >= 3)
+                {
+                    //print("COMPLETE");
+                    GameManager.audio.Stop();
+                    GameManager.audio.clip = GameManager.a6complete;
+                    GameManager.audio.Play();
+                }
+                else
+                {
+                    //print("NOP");
+                    GameManager.audio.Stop();
+                    GameManager.audio.clip = GameManager.a5correct;
+                    GameManager.audio.Play();
+                }
+
                 Destroy(this.gameObject);
+            }
+            else
+            {
+                GameManager.audio.Stop(); //
+                GameManager.audio.clip = GameManager.a3_2release;
+                GameManager.audio.Play();
             }
         }
         else if (wrongCheck)
         {
             GameManager.Instance.CheckLifes();
+
+            GameManager.audio.Stop();
+            GameManager.audio.clip = GameManager.a7wrong;
+            GameManager.audio.Play();
+
             Destroy(this.gameObject);
         }
         else
         {
-            GameManager.audio.Stop();
+            GameManager.audio.Stop(); //
             GameManager.audio.clip = GameManager.a3_2release;
             GameManager.audio.Play();
         }
