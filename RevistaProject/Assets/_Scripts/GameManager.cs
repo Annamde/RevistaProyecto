@@ -48,6 +48,32 @@ public class GameManager : MonoBehaviour
 
     public bool IsFirtsOpen = true;
 
+
+
+    public static AudioSource audio;
+
+    public static AudioClip a1button;
+    public AudioClip a1;
+    public static AudioClip a2lockedButton;
+    public AudioClip a2;
+    public static AudioClip a3grab;
+    public AudioClip a3;
+    public static AudioClip a3_2release;
+    public AudioClip a3_2;
+    public static AudioClip a4chac;
+    public AudioClip a4;
+    public static AudioClip a5correct;
+    public AudioClip a5;
+    public static AudioClip a6complete;
+    public AudioClip a6;
+    public static AudioClip a7wrong;
+    public AudioClip a7;
+    public static AudioClip a8win;
+    public AudioClip a8;
+    public static AudioClip a9gameover;
+    public AudioClip a9;
+
+
     private void Awake()
     {
         if (!created)
@@ -63,12 +89,23 @@ public class GameManager : MonoBehaviour
         }
 
         SetXPandCurrency();
+
+        a1button = a1;
+        a2lockedButton = a2;
+        a3grab = a3;
+        a3_2release = a3_2;
+        a4chac = a4;
+        a5correct = a5;
+        a6complete = a6;
+        a7wrong = a7;
+        a8win = a8;
+        a9gameover = a9;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

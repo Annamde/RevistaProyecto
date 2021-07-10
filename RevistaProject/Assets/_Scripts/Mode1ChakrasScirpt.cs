@@ -25,6 +25,8 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 
     bool canMove = true;
 
+    bool dragPlayed = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,8 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         myRb = GetComponent<Rigidbody2D>();
 
         speed = GameManager.chakraSpeed;
+
+        dragPlayed = false;
     }
 
     // Update is called once per frame
@@ -93,6 +97,14 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     void OnMouseDrag()
     {
         canMove = false;
+
+        if (!dragPlayed)
+        {
+            GameManager.audio.Stop();
+            GameManager.audio.clip = GameManager.a3grab;
+            GameManager.audio.Play();
+            dragPlayed = true;
+        }
 
         if (closeTempHole != null)
         {
@@ -161,6 +173,8 @@ public class Mode1ChakrasScirpt : MonoBehaviour
     {
         canMove = true;
 
+        dragPlayed = false;
+
         if (correctCheck) //si esta colisionando con una correcta y una incorrecta a la vez, se le da prioridad a la correcta (creo)
         {
             if (!correctTempHole.GetComponent<HuecoScript>().isCompleted)
@@ -174,6 +188,12 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         {
             GameManager.Instance.CheckLifes();
             Destroy(this.gameObject);
+        }
+        else
+        {
+            GameManager.audio.Stop();
+            GameManager.audio.clip = GameManager.a3_2release;
+            GameManager.audio.Play();
         }
     }
 }

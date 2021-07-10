@@ -81,4 +81,17 @@ public class StaticFunctions : MonoBehaviour
         }
     }
 
+    public void PlayButtonSound()
+    {
+        GameManager.audio.Stop();
+        GameManager.audio.clip = GameManager.a1button;
+        GameManager.audio.Play();
+    }
+    public void PlayLockedSound()
+    {
+        GameManager.audio.Stop();
+        GameManager.audio.clip = GameManager.a2lockedButton;
+        GameManager.audio.Play();
+    }
+
 }
