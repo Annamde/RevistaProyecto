@@ -60,9 +60,9 @@ public class Mode1ChakrasScirpt : MonoBehaviour
             {
                 if (!chacSoundDone)
                 {
-                    GameManager.audio.Stop(); //
-                    GameManager.audio.clip = GameManager.a4chac;
-                    GameManager.audio.Play();
+                    GameManager.audioGrab.Stop();
+                    GameManager.audioGrab.clip = GameManager.a4chac;
+                    GameManager.audioGrab.Play();
 
                     chacSoundDone = true;
                 }
@@ -111,9 +111,9 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 
         if (!dragPlayed)
         {
-            GameManager.audio.Stop(); //
-            GameManager.audio.clip = GameManager.a3grab;
-            GameManager.audio.Play();
+            GameManager.audioGrab.Stop();
+            GameManager.audioGrab.clip = GameManager.a3grab;
+            GameManager.audioGrab.Play();
             dragPlayed = true;
         }
 
@@ -214,9 +214,9 @@ public class Mode1ChakrasScirpt : MonoBehaviour
             }
             else
             {
-                GameManager.audio.Stop(); //
-                GameManager.audio.clip = GameManager.a3_2release;
-                GameManager.audio.Play();
+                GameManager.audioGrab.Stop();
+                GameManager.audioGrab.clip = GameManager.a3_2release;
+                GameManager.audioGrab.Play();
             }
         }
         else if (wrongCheck)
@@ -231,9 +231,9 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         }
         else
         {
-            GameManager.audio.Stop(); //
-            GameManager.audio.clip = GameManager.a3_2release;
-            GameManager.audio.Play();
+            GameManager.audioGrab.Stop();
+            GameManager.audioGrab.clip = GameManager.a3_2release;
+            GameManager.audioGrab.Play();
         }
     }
 }

@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 713, y: 498}
-  m_MaxSize: {x: 18008, y: 14048}
+  m_MinSize: {x: 711, y: 498}
+  m_MaxSize: {x: 18006, y: 14048}
   vertical: 0
-  controlID: 157
+  controlID: 152
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,8 +137,8 @@ MonoBehaviour:
     y: 0
     width: 674
     height: 731
-  m_MinSize: {x: 202, y: 348}
-  m_MaxSize: {x: 4002, y: 8048}
+  m_MinSize: {x: 202, y: 324}
+  m_MaxSize: {x: 4002, y: 8024}
   vertical: 1
   controlID: 16
 --- !u!114 &7
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 52
+  controlID: 85
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,8 +241,8 @@ MonoBehaviour:
     y: 0
     width: 437
     height: 336
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -293,8 +293,8 @@ MonoBehaviour:
     y: 0
     width: 425
     height: 731
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -373,7 +373,7 @@ MonoBehaviour:
       width: 2215.0044
       height: 1536
     m_MinimalGUI: 1
-  m_defaultScale: 0.3033854
+  m_defaultScale: 0.7584635
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 840, y: 603.75}
@@ -639,9 +639,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 40ed0100
-      m_LastClickedID: 126272
-      m_ExpandedIDs: 24fbfeffe60dffff3812ffff3624ffff7c27ffffca2affff102effff5631ffff7c34ffff8437ffff923affff0849ffff545bffff145efffffa60ffff0064ffff2467ffff486affff6a6dffffc870ffff1874ffff6a77ffffbc7afffff07dffff0481ffff2284ffff1292ffff9a97fffffac8ffffb0deffffa4e0fffff4e1ffff10e2fffff8e3ffff48e5ffff64e5ffff4ee7ffff9ee8ffffbae8ffffe8eaffff38ecffff54ecffff38eeffff6aefffff86efffff94f1ffff8af2ffffc4f2ffff80f6ffffd8f6ffffd2f8ffffd4fbfffff4ffffff
+      m_SelectedIDs: f6260000
+      m_LastClickedID: 0
+      m_ExpandedIDs: cee0ffff22e5ffffd4fbfffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -703,19 +703,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Audio/7
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Audio/7
   m_LastFoldersGridSize: 72
   m_LastProjectPath: C:\Users\morkr\OneDrive\Documentos\AAMundoFeliz\RevistaProyecto\RevistaProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 562b0000
-    m_LastClickedID: 11094
+    m_SelectedIDs: 6c2a0000
+    m_LastClickedID: 10860
     m_ExpandedIDs: 00000000ce2600003c2c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0

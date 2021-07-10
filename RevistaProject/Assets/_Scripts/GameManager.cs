@@ -97,10 +97,6 @@ public class GameManager : MonoBehaviour
 
         SetXPandCurrency();
 
-        audio = aGeneral;
-        audioChac = aChac;
-        audioGrab = aGrab;
-        audioCanvas = aCanvas;
         a1button = a1;
         a2lockedButton = a2;
         a3grab = a3;
@@ -117,6 +113,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         //audioGeneral = GetComponent<AudioSource>();
+        audio = aGeneral;
+        audioChac = aChac;
+        audioGrab = aGrab;
+        audioCanvas = aCanvas;
     }
 
     // Update is called once per frame

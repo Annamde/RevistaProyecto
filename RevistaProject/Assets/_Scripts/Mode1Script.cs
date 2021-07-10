@@ -16,6 +16,8 @@ public class Mode1Script : MonoBehaviour
     public Text currentPointText; //escena normal
     public Text maxPoints; // escena normal
 
+    bool musicPlayed = false;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -23,6 +25,11 @@ public class Mode1Script : MonoBehaviour
         canvasGO.enabled = false;
         canvasWIN.enabled = false;
         GameManager.currentLife = GameManager.life;
+    }
+
+    private void Start()
+    {
+        musicPlayed = false;
     }
 
     // Update is called once per frame
@@ -34,9 +41,14 @@ public class Mode1Script : MonoBehaviour
         
         if(GameManager.currentPoints >= GameManager.Instance.totalPointsInGame)
         {
-            GameManager.audioCanvas.Stop();
-            GameManager.audioCanvas.clip = GameManager.a8win;
-            GameManager.audioCanvas.Play();
+            if (!musicPlayed)
+            {
+                GameManager.audioCanvas.Stop();
+                GameManager.audioCanvas.clip = GameManager.a8win;
+                GameManager.audioCanvas.Play();
+
+                musicPlayed = true;
+            }
 
             GameManager.EnableCanvas(canvasWIN);
             GameManager.SetText(currencyText, GameManager.rewardAmount);
@@ -51,9 +63,14 @@ public class Mode1Script : MonoBehaviour
 
         if(GameManager.currentLife <= 0)
         {
-            GameManager.audioCanvas.Stop();
-            GameManager.audioCanvas.clip = GameManager.a9gameover;
-            GameManager.audioCanvas.Play();
+            if (!musicPlayed)
+            {
+                GameManager.audioCanvas.Stop();
+                GameManager.audioCanvas.clip = GameManager.a9gameover;
+                GameManager.audioCanvas.Play();
+
+                musicPlayed = true;
+            }
 
             GameManager.EnableCanvas(canvasGO);
         }
