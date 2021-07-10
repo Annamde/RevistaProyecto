@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7817cbb3e0acf849b1c5449f29333f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xpNeeded: 25
+  xpNeeded: 28
   buttonText: {fileID: 995555234}
   starColorNeeded: 1
 --- !u!1 &289113241
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7817cbb3e0acf849b1c5449f29333f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xpNeeded: 50
+  xpNeeded: 58
   buttonText: {fileID: 2007638439}
   starColorNeeded: 1
 --- !u!1 &789644161
@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7817cbb3e0acf849b1c5449f29333f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xpNeeded: 10
+  xpNeeded: 9
   buttonText: {fileID: 1645024175}
   starColorNeeded: 1
 --- !u!1 &1449378652
@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7817cbb3e0acf849b1c5449f29333f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xpNeeded: 70
+  xpNeeded: 118
   buttonText: {fileID: 289113243}
   starColorNeeded: 1
 --- !u!1 &1502486944
@@ -1626,7 +1626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7817cbb3e0acf849b1c5449f29333f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xpNeeded: 100
+  xpNeeded: 205
   buttonText: {fileID: 571316813}
   starColorNeeded: 1
 --- !u!1 &1597334896
@@ -1781,7 +1781,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 9
 --- !u!1 &1786605251
 GameObject:
   m_ObjectHideFlags: 0
