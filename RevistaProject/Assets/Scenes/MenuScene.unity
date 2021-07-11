@@ -616,7 +616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -89.99951}
+  m_AnchoredPosition: {x: 0, y: -89.99939}
   m_SizeDelta: {x: -230, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &261459465
@@ -6803,6 +6803,8 @@ GameObject:
   - component: {fileID: 717315923}
   - component: {fileID: 717315928}
   - component: {fileID: 717315927}
+  - component: {fileID: 717315930}
+  - component: {fileID: 717315929}
   m_Layer: 5
   m_Name: CanvasMenu
   m_TagString: Untagged
@@ -6934,6 +6936,43 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &717315929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717315922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &717315930
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717315922}
+  m_CullTransparentMesh: 0
 --- !u!114 &761540859 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3741197886276893515, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
@@ -23246,6 +23285,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ForceCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7228722456749942437, guid: 0a1e83e9450a0094d96bf873abb50576,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3996849401824791485, guid: 0a1e83e9450a0094d96bf873abb50576,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23460,6 +23504,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320944280955480117, guid: 0a1e83e9450a0094d96bf873abb50576,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661225233055830780, guid: 0a1e83e9450a0094d96bf873abb50576,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6696520356692500363, guid: 0a1e83e9450a0094d96bf873abb50576,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7110804667551275219, guid: 0a1e83e9450a0094d96bf873abb50576,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a1e83e9450a0094d96bf873abb50576, type: 3}
