@@ -572,6 +572,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c71a40419ff0d3c4ab176ec15c3551de, type: 3}
+--- !u!223 &77605013 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6751243325275555981, guid: c71a40419ff0d3c4ab176ec15c3551de,
+    type: 3}
+  m_PrefabInstance: {fileID: 77605012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &81859669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6182,6 +6188,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1daaa7d432184514aab71902bfd41abc, type: 3}
+--- !u!223 &929413726 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6176494487241799133, guid: 1daaa7d432184514aab71902bfd41abc,
+    type: 3}
+  m_PrefabInstance: {fileID: 929413725}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &929413727 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6176494485437348551, guid: 1daaa7d432184514aab71902bfd41abc,
+    type: 3}
+  m_PrefabInstance: {fileID: 929413725}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &929413728 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6176494486577365147, guid: 1daaa7d432184514aab71902bfd41abc,
+    type: 3}
+  m_PrefabInstance: {fileID: 929413725}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &942336320
 GameObject:
   m_ObjectHideFlags: 0
@@ -10611,11 +10647,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b537229d293a2f04b848a3fb5b67d9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasWIN: {fileID: 0}
-  canvasGO: {fileID: 0}
+  canvasWIN: {fileID: 929413726}
+  canvasGO: {fileID: 77605013}
   lifeText: {fileID: 1829835506}
-  currencyText: {fileID: 0}
-  starText: {fileID: 0}
+  currencyText: {fileID: 929413728}
+  starText: {fileID: 929413727}
   currentPointText: {fileID: 1291660515}
   maxPoints: {fileID: 1670859170}
 --- !u!4 &1970989042

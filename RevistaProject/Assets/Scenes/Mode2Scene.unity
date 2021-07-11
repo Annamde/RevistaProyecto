@@ -1077,6 +1077,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c71a40419ff0d3c4ab176ec15c3551de, type: 3}
+--- !u!223 &187905573 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6751243325275555981, guid: c71a40419ff0d3c4ab176ec15c3551de,
+    type: 3}
+  m_PrefabInstance: {fileID: 187905572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &200353607 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7540007466220905438, guid: 6f6cd16c20f3f6c4f800a31abde65ae7,
@@ -4949,6 +4955,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1daaa7d432184514aab71902bfd41abc, type: 3}
+--- !u!223 &785630907 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6176494487241799133, guid: 1daaa7d432184514aab71902bfd41abc,
+    type: 3}
+  m_PrefabInstance: {fileID: 785630906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &785630908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6176494485437348551, guid: 1daaa7d432184514aab71902bfd41abc,
+    type: 3}
+  m_PrefabInstance: {fileID: 785630906}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &785630909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6176494486577365147, guid: 1daaa7d432184514aab71902bfd41abc,
+    type: 3}
+  m_PrefabInstance: {fileID: 785630906}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &793915548 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2538746343511160880, guid: f68aa42a257a96b4981e5a4617e1d102,
@@ -9887,11 +9923,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b537229d293a2f04b848a3fb5b67d9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasWIN: {fileID: 0}
-  canvasGO: {fileID: 0}
+  canvasWIN: {fileID: 785630907}
+  canvasGO: {fileID: 187905573}
   lifeText: {fileID: 1829835506}
-  currencyText: {fileID: 0}
-  starText: {fileID: 0}
+  currencyText: {fileID: 785630909}
+  starText: {fileID: 785630908}
   currentPointText: {fileID: 1291660515}
   maxPoints: {fileID: 1670859170}
 --- !u!4 &1970989042
