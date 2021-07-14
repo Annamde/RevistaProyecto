@@ -27,8 +27,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 
     bool dragPlayed = false;
     bool chacSoundDone = false;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         chacDistance = 60.0f;
@@ -41,13 +40,11 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         dragPlayed = false;
         chacSoundDone = false;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (closeTempHole != null)
         {
-            //print(Input.mousePosition + "   " + cam.WorldToScreenPoint(closeTempHole.transform.position));
             if (Vector3.Distance(cam.WorldToScreenPoint(closeTempHole.transform.position), Input.mousePosition) > chacDistance)
             {
                 closeTempHole = null;
@@ -153,12 +150,6 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         {
             wrongCheck = true;
         }
-
-        // print(Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition));
-        //if (collision.gameObject.tag.Contains("Type") && (Vector3.Distance(cam.WorldToScreenPoint(collision.gameObject.transform.position), Input.mousePosition) <= chacDistance))
-        //{
-        //    closeTempHole = collision.gameObject;
-        //}
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -176,11 +167,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         {
             wrongCheck = false;
         }
-
-        //if (collision.gameObject.tag.Contains("Type"))
-        //{
-        //    closeTempHole = null;
-        //}
+        
     }
     private void OnMouseUp()
     {
@@ -192,19 +179,16 @@ public class Mode1ChakrasScirpt : MonoBehaviour
         {
             if (!correctTempHole.GetComponent<HuecoScript>().isCompleted)
             {
-                //GameManager.Instance.CheckPoints();
                 correctTempHole.GetComponent<HuecoScript>().AddProgress();
 
                 if (correctTempHole.GetComponent<HuecoScript>().fullProgress >= 3)
                 {
-                    //print("COMPLETE");
                     GameManager.audio.Stop();
                     GameManager.audio.clip = GameManager.a6complete;
                     GameManager.audio.Play();
                 }
                 else
                 {
-                    //print("NOP");
                     GameManager.audio.Stop();
                     GameManager.audio.clip = GameManager.a5correct;
                     GameManager.audio.Play();

@@ -122,9 +122,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //print(currentPoints + "   " + totalPointsInGame);
-        //print(totalXpBlue1);
-        //print(PlayerPrefs.GetInt("totalXpBlue1", totalXpBlue1));
+
     }
 
     public void ResetLifes(int num)
@@ -176,8 +174,6 @@ public class GameManager : MonoBehaviour
     
     public static void AddCurrencyAndXp()
     {
-        //xpPointsTotal += xpReward;
-
         switch (colorMode)
         {
             case 1:
@@ -219,6 +215,48 @@ public class GameManager : MonoBehaviour
             case 7:
                 totalPurpleCurrency7 += rewardAmount;
                 totalXpPurple7 += (int)StaticFunctions.CalculateStars();
+                PlayerPrefs.SetInt("totalPurpleCurrency7", totalPurpleCurrency7);
+                PlayerPrefs.SetInt("totalXpPurple7", totalXpPurple7);
+                break;
+        }
+    }
+
+    public static void UpdateCurrency(Enums.RayosType type, int currencyGastada)
+    {
+        switch (type)
+        {
+            case Enums.RayosType.Blue:
+                totalBlueCurrency1 -= currencyGastada;
+                PlayerPrefs.SetInt("totalBlueCurrency1", totalBlueCurrency1);
+                PlayerPrefs.SetInt("totalXpBlue1", totalXpBlue1);
+                break;
+            case Enums.RayosType.Yellow:
+                totalYellowCurrency2 -= currencyGastada;
+                PlayerPrefs.SetInt("totalYellowCurrency2", totalYellowCurrency2);
+                PlayerPrefs.SetInt("totalXpYellow2", totalXpYellow2);
+                break;
+            case Enums.RayosType.Pink:
+                totalPinkCurrency3 -= currencyGastada;
+                PlayerPrefs.SetInt("totalPinkCurrency3", totalPinkCurrency3);
+                PlayerPrefs.SetInt("totalXpPink3", totalXpPink3);
+                break;
+            case Enums.RayosType.White:
+                totalWhiteCurrency4 -= currencyGastada;
+                PlayerPrefs.SetInt("totalWhiteCurrency4", totalWhiteCurrency4);
+                PlayerPrefs.SetInt("totalXpWhite4", totalXpWhite4);
+                break;
+            case Enums.RayosType.Green:
+                totalGreenCurrency5 -= currencyGastada;
+                PlayerPrefs.SetInt("totalGreenCurrency5", totalGreenCurrency5);
+                PlayerPrefs.SetInt("totalXpGreen5", totalXpGreen5);
+                break;
+            case Enums.RayosType.Orange:
+                totalOrangeCurrency6 -= currencyGastada;
+                PlayerPrefs.SetInt("totalOrangeCurrency6", totalOrangeCurrency6);
+                PlayerPrefs.SetInt("totalXpOrange6", totalXpOrange6);
+                break;
+            case Enums.RayosType.Purple:
+                totalPurpleCurrency7 -= currencyGastada;
                 PlayerPrefs.SetInt("totalPurpleCurrency7", totalPurpleCurrency7);
                 PlayerPrefs.SetInt("totalXpPurple7", totalXpPurple7);
                 break;

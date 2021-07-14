@@ -76,7 +76,6 @@ public class LockedButtonScript : MonoBehaviour
         {
             case 1:
                 GameManager.SetText(buttonText, xpNeeded - GameManager.totalXpBlue1);
-                //buttonText.text = (xpNeeded - GameManager.totalXpBlue1).ToString();
                 break;
             case 2:
                 buttonText.text = (xpNeeded - GameManager.totalXpYellow2).ToString();
@@ -98,9 +97,4 @@ public class LockedButtonScript : MonoBehaviour
                 break;
         }
     }
-
-    //public void setunlockxp(int xp)
-    //{
-    //
-    //}
 }
