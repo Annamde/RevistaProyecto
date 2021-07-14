@@ -45,12 +45,20 @@ public class ButtonBuyModes : MonoBehaviour
         _warningText.enabled = false;
         if (_modeClass.CurrencyNecessary <= _relationCurrencies[_modeClass.RayosType])
         {
+            GameManager.audio.Stop();
+            GameManager.audio.clip = GameManager.a1button;
+            GameManager.audio.Play();
+
             GameManager.UpdateCurrency(_modeClass.RayosType, _modeClass.CurrencyNecessary);
             _modeClass.ImageModeUnlocked.enabled = false;
             _panel.SetActive(false);
         }
         else
         {
+            GameManager.audio.Stop();
+            GameManager.audio.clip = GameManager.a2lockedButton;
+            GameManager.audio.Play();
+
             _warningText.enabled = true;
         }
     }
