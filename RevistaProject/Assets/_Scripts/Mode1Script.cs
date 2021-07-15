@@ -43,6 +43,7 @@ public class Mode1Script : MonoBehaviour
         {
             if (!musicPlayed)
             {
+                GameManager.audioOst.Stop();
                 GameManager.audioCanvas.Stop();
                 GameManager.audioCanvas.clip = GameManager.a8win;
                 GameManager.audioCanvas.Play();
@@ -65,6 +66,7 @@ public class Mode1Script : MonoBehaviour
         {
             if (!musicPlayed)
             {
+                GameManager.audioOst.Stop();
                 GameManager.audioCanvas.Stop();
                 GameManager.audioCanvas.clip = GameManager.a9gameover;
                 GameManager.audioCanvas.Play();

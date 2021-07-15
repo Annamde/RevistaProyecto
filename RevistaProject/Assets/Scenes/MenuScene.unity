@@ -12908,6 +12908,7 @@ MonoBehaviour:
   a7: {fileID: 8300000, guid: 200df370eb600134591eb9e19af9d25b, type: 3}
   a8: {fileID: 8300000, guid: 8243ebb096a90344b976a9732031e536, type: 3}
   a9: {fileID: 8300000, guid: 63281612d482fd94a8e4ffa75e8a21f2, type: 3}
+  aOst: {fileID: 643720244}
 --- !u!82 &1488544450
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22969,6 +22970,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7590423783648136940, guid: 64b55768ec2d8aa4fa75b411b434a2d1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -89.99951
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64b55768ec2d8aa4fa75b411b434a2d1, type: 3}

@@ -80,6 +80,9 @@ public class GameManager : MonoBehaviour
     public static AudioClip a9gameover;
     public AudioClip a9;
 
+    public static AudioSource audioOst;
+    public AudioSource aOst;
+
 
     private void Awake()
     {
@@ -117,12 +120,14 @@ public class GameManager : MonoBehaviour
         audioChac = aChac;
         audioGrab = aGrab;
         audioCanvas = aCanvas;
+
+        audioOst = aOst;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        audioOst = aOst;
     }
 
     public void ResetLifes(int num)

@@ -28,12 +28,18 @@ public class GeneratorScript : MonoBehaviour
 
     void Generator()
     {
+        //print(positions.Count);
         temp = Random.Range(0, GameManager.charkrasMode1);
         tempPos = Random.Range(0, positions.Count);
         if (tempPos % 2 == 0 || tempPos == 0) //fuerza a que el chakra salga de una position impar
         {
             tempPos = tempPos + 1;
         }
+        if (tempPos >= 9)
+        {
+            tempPos = tempPos - 1;
+        }
+        print("tempPos  " + tempPos);
        
         tempGO = Instantiate(chakrasType1[temp]);
         tempGO.transform.position = positions[tempPos].gameObject.transform.position;
@@ -47,6 +53,7 @@ public class GeneratorScript : MonoBehaviour
         {
             tempPosOther = tempPosOther - 1;
         }
+        print("tempPosOther  " + tempPosOther);
 
         goOther = Instantiate(otherChakras[tempOther]);
         goOther.transform.position = positions[tempPosOther].gameObject.transform.position;

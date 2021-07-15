@@ -4739,6 +4739,7 @@ MonoBehaviour:
   a7: {fileID: 8300000, guid: 200df370eb600134591eb9e19af9d25b, type: 3}
   a8: {fileID: 8300000, guid: 8243ebb096a90344b976a9732031e536, type: 3}
   a9: {fileID: 8300000, guid: 63281612d482fd94a8e4ffa75e8a21f2, type: 3}
+  aOst: {fileID: 366110903}
 --- !u!4 &758245564
 Transform:
   m_ObjectHideFlags: 0
