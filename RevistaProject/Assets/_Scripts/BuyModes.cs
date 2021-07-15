@@ -12,6 +12,9 @@ public class BuyModes : MonoBehaviour
     private Enums.RayosType _currencyNecessaryType;
 
     [SerializeField]
+    private Enums.RayosType _buttonType;
+
+    [SerializeField]
     private Text _modeText;
 
     [SerializeField]
@@ -27,7 +30,8 @@ public class BuyModes : MonoBehaviour
     private Image _imageModeUnlocked;
 
     public int CurrencyNecessary => _currencyNecessary;
-    public Enums.RayosType RayosType => _currencyNecessaryType;
+    public Enums.RayosType RayosCurrencyType => _currencyNecessaryType;
+    public Enums.RayosType ButtonModeType => _buttonType;
     public Image ImageModeUnlocked => _imageModeUnlocked;
 
     private Dictionary<Enums.RayosType, string> _currenciesNames = new Dictionary<Enums.RayosType, string>()

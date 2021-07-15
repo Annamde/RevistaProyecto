@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -43,23 +42,27 @@ public class ButtonBuyModes : MonoBehaviour
     public void CheckCanBuyMode()
     {
         _warningText.enabled = false;
-        if (_modeClass.CurrencyNecessary <= _relationCurrencies[_modeClass.RayosType])
+        if (_modeClass.CurrencyNecessary <= _relationCurrencies[_modeClass.RayosCurrencyType])
         {
-            GameManager.audio.Stop();
-            GameManager.audio.clip = GameManager.a1button;
-            GameManager.audio.Play();
+            PlaySound(GameManager.a1button);
 
-            GameManager.UpdateCurrency(_modeClass.RayosType, _modeClass.CurrencyNecessary);
+            GameManager.UpdateCurrency(_modeClass.RayosCurrencyType, _modeClass.CurrencyNecessary);
             _modeClass.ImageModeUnlocked.enabled = false;
             _panel.SetActive(false);
+            PlayerPrefs.SetInt(_modeClass.ButtonModeType.ToString(), 1);
         }
         else
         {
-            GameManager.audio.Stop();
-            GameManager.audio.clip = GameManager.a2lockedButton;
-            GameManager.audio.Play();
+            PlaySound(GameManager.a2lockedButton);
 
             _warningText.enabled = true;
         }
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        GameManager.audio.Stop();
+        GameManager.audio.clip = clip;
+        GameManager.audio.Play();
     }
 }

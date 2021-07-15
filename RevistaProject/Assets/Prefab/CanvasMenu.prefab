@@ -1614,11 +1614,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7590423783648136940}
     m_Modifications:
-    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Name
-      value: Modo1
-      objectReference: {fileID: 0}
     - target: {fileID: 9024101363861572039, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1723,6 +1718,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeText
+      value: 
+      objectReference: {fileID: 5517835543244665236}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyText
+      value: 
+      objectReference: {fileID: 2274628665973994297}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNumberText
+      value: 
+      objectReference: {fileID: 2023349028874790472}
+    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: m_Name
+      value: Modo1
       objectReference: {fileID: 0}
     - target: {fileID: 7894705446978518080, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
@@ -1969,21 +1984,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 3396334569557064345}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _modeText
-      value: 
-      objectReference: {fileID: 5517835543244665236}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyText
-      value: 
-      objectReference: {fileID: 2274628665973994297}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNumberText
-      value: 
-      objectReference: {fileID: 2023349028874790472}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a2f6041288c39f47b59680ba5c2b5ea, type: 3}
 --- !u!114 &3396334569557064345 stripped
@@ -2011,11 +2011,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7590423783648136940}
     m_Modifications:
-    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Name
-      value: Modo 2
-      objectReference: {fileID: 0}
     - target: {fileID: 9024101363861572039, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2120,6 +2115,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeText
+      value: 
+      objectReference: {fileID: 5517835543244665236}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyText
+      value: 
+      objectReference: {fileID: 2274628665973994297}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNumberText
+      value: 
+      objectReference: {fileID: 2023349028874790472}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessary
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeName
+      value: Rayo Amarillo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _buttonType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: m_Name
+      value: Modo 2
       objectReference: {fileID: 0}
     - target: {fileID: 7894705446978518080, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
@@ -2281,12 +2311,6 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 64.3
       objectReference: {fileID: 0}
-    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 05ff36cf718b77d42a2f0e086a5e5f90,
-        type: 3}
     - target: {fileID: 7488968943990460489, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2357,31 +2381,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8876657335300176742}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
-      propertyPath: _modeText
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5517835543244665236}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+      objectReference: {fileID: 21300000, guid: 05ff36cf718b77d42a2f0e086a5e5f90,
         type: 3}
-      propertyPath: _currencyText
-      value: 
-      objectReference: {fileID: 2274628665973994297}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNumberText
-      value: 
-      objectReference: {fileID: 2023349028874790472}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessary
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _modeName
-      value: Rayo Amarillo
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a2f6041288c39f47b59680ba5c2b5ea, type: 3}
 --- !u!114 &8876657335300176742 stripped
@@ -2409,11 +2414,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7590423783648136940}
     m_Modifications:
-    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Name
-      value: Modo 5
-      objectReference: {fileID: 0}
     - target: {fileID: 9024101363861572039, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2518,6 +2518,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeText
+      value: 
+      objectReference: {fileID: 5517835543244665236}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyText
+      value: 
+      objectReference: {fileID: 2274628665973994297}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNumberText
+      value: 
+      objectReference: {fileID: 2023349028874790472}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessary
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessaryType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeName
+      value: Rayo Verde
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _buttonType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: m_Name
+      value: Modo 5
       objectReference: {fileID: 0}
     - target: {fileID: 7894705446978518080, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
@@ -2674,12 +2714,6 @@ PrefabInstance:
       propertyPath: m_textInfo.wordCount
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a7bb245c1f2435548877cfad4a1c6c93,
-        type: 3}
     - target: {fileID: 7488968943990460489, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2750,36 +2784,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8876657334853497832}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
-      propertyPath: _modeText
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5517835543244665236}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+      objectReference: {fileID: 21300000, guid: a7bb245c1f2435548877cfad4a1c6c93,
         type: 3}
-      propertyPath: _currencyText
-      value: 
-      objectReference: {fileID: 2274628665973994297}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNumberText
-      value: 
-      objectReference: {fileID: 2023349028874790472}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessary
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessaryType
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _modeName
-      value: Rayo Verde
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a2f6041288c39f47b59680ba5c2b5ea, type: 3}
 --- !u!114 &8876657334853497832 stripped
@@ -2807,11 +2817,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7590423783648136940}
     m_Modifications:
-    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Name
-      value: Modo 3
-      objectReference: {fileID: 0}
     - target: {fileID: 9024101363861572039, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2916,6 +2921,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeText
+      value: 
+      objectReference: {fileID: 5517835543244665236}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyText
+      value: 
+      objectReference: {fileID: 2274628665973994297}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNumberText
+      value: 
+      objectReference: {fileID: 2023349028874790472}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessary
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessaryType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeName
+      value: Rayo Rosa
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _buttonType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: m_Name
+      value: Modo 3
       objectReference: {fileID: 0}
     - target: {fileID: 7894705446978518080, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
@@ -3077,12 +3122,6 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 72
       objectReference: {fileID: 0}
-    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 66795a69d22dadc46838df4fdd04b3b1,
-        type: 3}
     - target: {fileID: 7488968943990460489, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -3153,36 +3192,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8876657335715322697}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
-      propertyPath: _modeText
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5517835543244665236}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+      objectReference: {fileID: 21300000, guid: 66795a69d22dadc46838df4fdd04b3b1,
         type: 3}
-      propertyPath: _currencyText
-      value: 
-      objectReference: {fileID: 2274628665973994297}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNumberText
-      value: 
-      objectReference: {fileID: 2023349028874790472}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessary
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessaryType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _modeName
-      value: Rayo Rosa
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a2f6041288c39f47b59680ba5c2b5ea, type: 3}
 --- !u!224 &1471153532392005616 stripped
@@ -3210,11 +3225,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7590423783648136940}
     m_Modifications:
-    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Name
-      value: Modo 4
-      objectReference: {fileID: 0}
     - target: {fileID: 9024101363861572039, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3319,6 +3329,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeText
+      value: 
+      objectReference: {fileID: 5517835543244665236}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyText
+      value: 
+      objectReference: {fileID: 2274628665973994297}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNumberText
+      value: 
+      objectReference: {fileID: 2023349028874790472}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessary
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessaryType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeName
+      value: Rayo Blanco
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _buttonType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: m_Name
+      value: Modo 4
       objectReference: {fileID: 0}
     - target: {fileID: 7894705446978518080, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
@@ -3475,12 +3525,6 @@ PrefabInstance:
       propertyPath: m_textInfo.wordCount
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 388a67dab7ca93e488dcad990d34d140,
-        type: 3}
     - target: {fileID: 7488968943990460489, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -3551,36 +3595,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8876657334065083385}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
-      propertyPath: _modeText
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5517835543244665236}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+      objectReference: {fileID: 21300000, guid: 388a67dab7ca93e488dcad990d34d140,
         type: 3}
-      propertyPath: _currencyText
-      value: 
-      objectReference: {fileID: 2274628665973994297}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNumberText
-      value: 
-      objectReference: {fileID: 2023349028874790472}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessary
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessaryType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _modeName
-      value: Rayo Blanco
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a2f6041288c39f47b59680ba5c2b5ea, type: 3}
 --- !u!114 &8876657334065083385 stripped
@@ -3608,11 +3628,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7590423783648136940}
     m_Modifications:
-    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Name
-      value: Modo 7
-      objectReference: {fileID: 0}
     - target: {fileID: 9024101363861572039, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3717,6 +3732,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeText
+      value: 
+      objectReference: {fileID: 5517835543244665236}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyText
+      value: 
+      objectReference: {fileID: 2274628665973994297}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNumberText
+      value: 
+      objectReference: {fileID: 2023349028874790472}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessary
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessaryType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeName
+      value: Rayo Violeta
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _buttonType
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: m_Name
+      value: Modo 7
       objectReference: {fileID: 0}
     - target: {fileID: 7894705446978518080, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
@@ -3878,12 +3933,6 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 70.95
       objectReference: {fileID: 0}
-    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7a5dc65a437473b46945e3cc78a6ddd6,
-        type: 3}
     - target: {fileID: 7488968943990460489, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -3954,36 +4003,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8876657334168366200}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
-      propertyPath: _modeText
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5517835543244665236}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+      objectReference: {fileID: 21300000, guid: 7a5dc65a437473b46945e3cc78a6ddd6,
         type: 3}
-      propertyPath: _currencyText
-      value: 
-      objectReference: {fileID: 2274628665973994297}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNumberText
-      value: 
-      objectReference: {fileID: 2023349028874790472}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessary
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessaryType
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _modeName
-      value: Rayo Violeta
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a2f6041288c39f47b59680ba5c2b5ea, type: 3}
 --- !u!114 &8876657334168366200 stripped
@@ -4011,11 +4036,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7590423783648136940}
     m_Modifications:
-    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Name
-      value: Modo 6
-      objectReference: {fileID: 0}
     - target: {fileID: 9024101363861572039, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4120,6 +4140,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeText
+      value: 
+      objectReference: {fileID: 5517835543244665236}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyText
+      value: 
+      objectReference: {fileID: 2274628665973994297}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNumberText
+      value: 
+      objectReference: {fileID: 2023349028874790472}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessary
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _currencyNecessaryType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _modeName
+      value: Rayo Naranja
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: _buttonType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497367458651390626, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+        type: 3}
+      propertyPath: m_Name
+      value: Modo 6
       objectReference: {fileID: 0}
     - target: {fileID: 7894705446978518080, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
@@ -4281,12 +4341,6 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 63.2
       objectReference: {fileID: 0}
-    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 06573319aa74c9e47905b706c7b05505,
-        type: 3}
     - target: {fileID: 7488968943990460489, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -4357,36 +4411,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8876657334671881346}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+    - target: {fileID: 929239382058569981, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
         type: 3}
-      propertyPath: _modeText
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5517835543244665236}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
+      objectReference: {fileID: 21300000, guid: 06573319aa74c9e47905b706c7b05505,
         type: 3}
-      propertyPath: _currencyText
-      value: 
-      objectReference: {fileID: 2274628665973994297}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNumberText
-      value: 
-      objectReference: {fileID: 2023349028874790472}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessary
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _currencyNecessaryType
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325926256926150014, guid: 5a2f6041288c39f47b59680ba5c2b5ea,
-        type: 3}
-      propertyPath: _modeName
-      value: Rayo Naranja
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a2f6041288c39f47b59680ba5c2b5ea, type: 3}
 --- !u!114 &8876657334671881346 stripped
