@@ -127,7 +127,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        audioOst = aOst;
+        if (aOst == null)
+        {
+            aOst = GameObject.Find("Musica").GetComponent<AudioSource>();
+            audioOst = aOst;
+        }
     }
 
     public void ResetLifes(int num)
