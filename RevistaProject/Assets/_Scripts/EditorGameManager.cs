@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(GameManager))]
 public class EditorGameManager : Editor
 {
-#if UNITY_EDITOR
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
@@ -18,6 +18,5 @@ public class EditorGameManager : Editor
         }
 
     }
-#endif
-
 }
+#endif
