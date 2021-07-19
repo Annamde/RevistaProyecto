@@ -13,10 +13,21 @@ public class HuecoScript : MonoBehaviour
 
     public Image filler;
     public Image completedImage; //imagen con el chakra o la barra
+
+    [SerializeField]
+    private SpriteRenderer _spriteRenderer;
+
+    [SerializeField]
+    private Sprite _spriteCorrectType;
     
     void Start()
     {
         isCompleted = false;
+
+        if (this.tag != "TypeWrong")
+        {
+            _spriteRenderer.sprite = _spriteCorrectType;
+        }
     }
     
     void Update()

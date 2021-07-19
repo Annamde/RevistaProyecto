@@ -144,5 +144,8 @@ MonoBehaviour:
   fullProgress: 0
   isLine: 0
   isCompleted: 0
+  pointsAdded: 0
   filler: {fileID: 0}
   completedImage: {fileID: 0}
+  _spriteRenderer: {fileID: 5188193115302582022}
+  _spriteCorrectType: {fileID: 21300000, guid: c8ad365bada6c0c45ba53304ad19e9bb, type: 3}
