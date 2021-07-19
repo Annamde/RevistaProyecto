@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class TreeButtonScript : MonoBehaviour
@@ -25,7 +23,6 @@ public class TreeButtonScript : MonoBehaviour
         if(myTree.isActiveAndEnabled)
         {
             counter += Time.deltaTime;
-           //temporizador.fillAmount = (counter * 100 / GameManager.treeCorrectTime) / 100;
             temporizador.fillAmount = (counter/GameManager.treeCorrectTime);
         }
         else if(tempTree.fillAmount < 1)
