@@ -39,7 +39,7 @@ public class GeneratorScript : MonoBehaviour
         {
             tempPos = tempPos - 1;
         }
-        print("tempPos  " + tempPos);
+        //print("tempPos  " + tempPos);
        
         tempGO = Instantiate(chakrasType1[temp]);
         tempGO.transform.position = positions[tempPos].gameObject.transform.position;
@@ -53,7 +53,7 @@ public class GeneratorScript : MonoBehaviour
         {
             tempPosOther = tempPosOther - 1;
         }
-        print("tempPosOther  " + tempPosOther);
+        //print("tempPosOther  " + tempPosOther);
 
         goOther = Instantiate(otherChakras[tempOther]);
         goOther.transform.position = positions[tempPosOther].gameObject.transform.position;

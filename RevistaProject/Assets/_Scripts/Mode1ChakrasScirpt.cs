@@ -135,7 +135,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == this.tag)
+        if ((collision.gameObject.tag == this.tag) && this.tag != "TypeWrong")
         {
             correctCheck = true;
             correctTempHole = collision.gameObject;

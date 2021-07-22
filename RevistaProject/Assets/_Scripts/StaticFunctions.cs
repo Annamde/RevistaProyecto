@@ -81,6 +81,11 @@ public class StaticFunctions : MonoBehaviour
         }
     }
 
+    public void AssignLinesToComplete(int lines)
+    {
+        GameManager.linesToComplete = lines;
+    }
+
     public void PlayButtonSound()
     {
         GameManager.audio.Stop();

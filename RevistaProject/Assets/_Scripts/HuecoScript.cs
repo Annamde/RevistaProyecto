@@ -38,6 +38,11 @@ public class HuecoScript : MonoBehaviour
             {
                 if (!pointsAdded)
                 {
+                    if (isLine)
+                    {
+                        GameManager.linesCompleted++;
+                    }
+
                     GameManager.Instance.CheckPoints();
                     pointsAdded = true;
                 }

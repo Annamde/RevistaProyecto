@@ -17,6 +17,7 @@ public class Mode1Script : MonoBehaviour
     public Text maxPoints; // escena normal
 
     bool musicPlayed = false;
+    bool linesWronged = false;
 
 
     // Start is called before the first frame update
@@ -30,15 +31,30 @@ public class Mode1Script : MonoBehaviour
     private void Start()
     {
         musicPlayed = false;
+        linesWronged = false;
+        
+        GameManager.linesCompleted = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //print(GameManager.linesCompleted);
+
         GameManager.SetText(lifeText, GameManager.currentLife);
         GameManager.SetText(currentPointText, GameManager.currentPoints);
         GameManager.SetText(maxPoints, GameManager.Instance.totalPointsInGame);
         
+        //convertir todas las barras en TypeWrong
+        if((GameManager.linesCompleted >= GameManager.linesToComplete) && linesWronged == false)
+        {
+            foreach (GameObject hueco in GetAllWrongBars())
+            {
+                hueco.gameObject.tag = "TypeWrong";
+            }
+            linesWronged = true;
+        }
+
         if(GameManager.currentPoints >= GameManager.Instance.totalPointsInGame)
         {
             if (!musicPlayed)
@@ -76,5 +92,15 @@ public class Mode1Script : MonoBehaviour
 
             GameManager.EnableCanvas(canvasGO);
         }
+    }
+
+    public List<GameObject> GetAllWrongBars()
+    {
+        List<GameObject> barsList = new List<GameObject>(GameObject.FindGameObjectsWithTag("TypeBlueBar"));
+        barsList.AddRange(new List<GameObject>(GameObject.FindGameObjectsWithTag("TypeYellowBar")));
+        barsList.AddRange(new List<GameObject>(GameObject.FindGameObjectsWithTag("TypePinkBar")));
+        barsList.AddRange(new List<GameObject>(GameObject.FindGameObjectsWithTag("TypeWhiteBar")));
+
+        return barsList;
     }
 }

@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
     public static float tempTree = 15; //el tiempo que tarda en cargarse de nuevo el arbol
     public static float chakraSpeed = 1; //la velocidad a la que cae el chakra
 
+    public static int linesToComplete = 0; //numero de barras que hay que completar en este nivel (se asigna desde el botón del menú)
+    public static int linesCompleted = 0; //barras completadas en este nivel de momento
+
     public static int totalBlueCurrency1 = 0;
     public static int totalYellowCurrency2 = 0;
     public static int totalPinkCurrency3 = 0;
