@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7817cbb3e0acf849b1c5449f29333f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xpNeeded: 9
+  xpNeeded: 8
   buttonText: {fileID: 1645024175}
   starColorNeeded: 1
 --- !u!1 &1449378652
