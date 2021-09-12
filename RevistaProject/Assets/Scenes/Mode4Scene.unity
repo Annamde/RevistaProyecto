@@ -10481,9 +10481,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
         type: 3}
+      propertyPath: _chakrasListObjects.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
       propertyPath: _generator
       value: 
       objectReference: {fileID: 1069858380}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _barraObject
+      value: 
+      objectReference: {fileID: 3714424145109534552, guid: 136ae48036e11324688728b05f56fc15,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1460787566438430412, guid: 1040379462ce19d449cedf9660c0b1c7,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 5163438452517178148, guid: 1e55ea5738e52fd488f79086f8dfc8a7,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 1224762284053784272, guid: 412d336d7ded1404eba65515841372f3,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 3204955588308165552, guid: 23d6cf6469c100844b33bcf52c420834,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 6849250638095273735, guid: 1dda3ed3398183f439a244cf36f87328,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 3714424145109534552, guid: 136ae48036e11324688728b05f56fc15,
+        type: 3}
     - target: {fileID: 4261568591410709100, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
         type: 3}
       propertyPath: m_AnchorMin.y

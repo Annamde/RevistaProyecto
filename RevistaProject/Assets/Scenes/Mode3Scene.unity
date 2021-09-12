@@ -5870,9 +5870,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
         type: 3}
+      propertyPath: _chakrasListObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
       propertyPath: _generator
       value: 
       objectReference: {fileID: 1069858380}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 4236546324893120591, guid: fa5174521588de445a0205ac51e8681e,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _barraObject
+      value: 
+      objectReference: {fileID: 4236546324893120591, guid: fa5174521588de445a0205ac51e8681e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6863b0f3b3bbd84395f2e1b43826dbf, type: 3}
 --- !u!4 &1041867993 stripped

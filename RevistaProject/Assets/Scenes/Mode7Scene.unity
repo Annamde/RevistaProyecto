@@ -4526,9 +4526,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
         type: 3}
+      propertyPath: _chakrasListObjects.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
       propertyPath: _generator
       value: 
       objectReference: {fileID: 1069858380}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 7732523913706155963, guid: f6f92b99395ed0742828589fb1d22bef,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 5258995671036967367, guid: fec4af959d9cc5c47b2508e0284623a3,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 8077416251618427441, guid: e1100c525934b5a43b401d8d949e65e6,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 5846972917799783300, guid: 7c9dddb719f006a409c76c7e90ee531c,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 2447506306534478653, guid: 55556871186e8884d816f3952bd4b99b,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[5]
+      value: 
+      objectReference: {fileID: 5576908660117740924, guid: b03210f6da48eef47bf93974daabd54e,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _chakrasListObjects.Array.data[6]
+      value: 
+      objectReference: {fileID: 9184783347055686986, guid: 1b617a4b5299fde459afbd0c57c54dae,
+        type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _barraObject
+      value: 
+      objectReference: {fileID: 1641659472795186307, guid: 568af86061fd7ee4a95c3869453653f2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6863b0f3b3bbd84395f2e1b43826dbf, type: 3}
 --- !u!4 &755771607 stripped
