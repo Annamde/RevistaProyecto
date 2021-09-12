@@ -5,20 +5,18 @@ using UnityEngine.UI;
 
 public class CanvasBeforePlay : MonoBehaviour
 {
-    [SerializeField] private GeneratorScript _generator;
     [SerializeField] private Transform _instantiateZone;
+    [SerializeField] private Transform _instantiateBarraZone;
     [SerializeField] private Text _numberBarrasText;
+    [SerializeField] private List<GameObject> _chakrasListObjects;
+    [SerializeField] private GameObject _barraObject;
 
     private List<int> _modesWithOnlyBarra = new List<int> { 2, 3 };
     private List<GameObject> _onlyChakras = new List<GameObject>();
     private List<GameObject> _onlyBarras = new List<GameObject>();
 
-    //ANNA DEL FUTURO
-    /* FALTA PROBAR A VER SI FUNCIONA
-     * FALTA HACER QUE SALGAN X NUMERO DE BARRAS CUANDO TMBN HAY LOGOS
-     * MIRAR MUY BIEN COMO HACER EL MODO 4 QUE PUEDE DAR PROBLEMAS (SI NO CAMBIAR EL ORDEN)
-     * PREGUNTAR SI SE PUEDE CAMBIAR EL ORDEN DE LAS BARRAS Y LOS LOGOS
-     */
+    private bool _needBarras = false;
+   
 
     private void Start()
     {
@@ -31,42 +29,60 @@ public class CanvasBeforePlay : MonoBehaviour
 
     private void SetObjectives()
     {
-        int lenghtChakras = GameManager.Instance.totalPointsInGame / 10;
+        int levelcounter = GameManager.Instance.totalPointsInGame / 10;
+        int lenghtBarras = 0;
 
         if (_modesWithOnlyBarra.Contains(GameManager.colorMode))
         {
-            _numberBarrasText.text = lenghtChakras.ToString();
+            SetBarrasText(levelcounter);
         }
         else
         {
-            if (lenghtChakras >= _onlyChakras.Count)
-                lenghtChakras = _onlyChakras.Count;
-          
-            for (int i = 0; i < lenghtChakras; i++)
+            if (levelcounter > _onlyChakras.Count)
             {
-                Instantiate(_onlyChakras[i], _instantiateZone);
+                lenghtBarras = levelcounter - _onlyChakras.Count;
+                levelcounter = _onlyChakras.Count;
+                _needBarras = true;
+            }
+          
+            for (int i = 0; i < levelcounter; i++)
+            {
+                Instantiate(_chakrasListObjects[i], _instantiateZone);
+            }
+            if (_needBarras)
+            {
+                SetBarrasText(lenghtBarras);
             }
         }
-        
+        InstantiateBarraObject();
+    }
+
+    private void SetBarrasText(int barrasNumber)
+    {
+        _numberBarrasText.text = barrasNumber.ToString();
+    }
+    private void InstantiateBarraObject()
+    {
+        Instantiate(_barraObject, _instantiateBarraZone);
     }
 
     private void DeleteBarrasFromList()
     {
-        for (int i = 0; i < _generator.chakrasType1.Count; i++)
+        for (int i = 0; i < _chakrasListObjects.Count; i++)
         {
-            if (_generator.chakrasType1[i].name.Contains("logo"))
+            if (_chakrasListObjects[i].name.Contains("logo"))
             {
-                _onlyChakras.Add(_generator.chakrasType1[i]);
+                _onlyChakras.Add(_chakrasListObjects[i]);
             }
         }
     }
     private void DeleteChakrasFromList()
     {
-        for (int i = 0; i < _generator.chakrasType1.Count; i++)
+        for (int i = 0; i < _chakrasListObjects.Count; i++)
         {
-            if (_generator.chakrasType1[i].name.Contains("barra"))
+            if (_chakrasListObjects[i].name.Contains("barra"))
             {
-                _onlyBarras.Add(_generator.chakrasType1[i]);
+                _onlyBarras.Add(_chakrasListObjects[i]);
             }
         }
     }
