@@ -423,6 +423,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6751243325209791809, guid: c71a40419ff0d3c4ab176ec15c3551de,
+        type: 3}
+      propertyPath: m_Text
+      value: "Oh, no pasa nada, puedes volver a intentarlo.\n\xA1Recuerda revisarte
+        todos los logos!"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c71a40419ff0d3c4ab176ec15c3551de, type: 3}
 --- !u!223 &77605013 stripped
@@ -4576,6 +4582,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5746642216737947841, guid: be0765deff18e3a45a3a8de95241fb30,
         type: 3}
+    - target: {fileID: 5724632576838921190, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: m_Text
+      value: Completa los logos indicados
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6863b0f3b3bbd84395f2e1b43826dbf, type: 3}
 --- !u!1001 &729028311
@@ -6043,6 +6054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176494486015963912, guid: 1daaa7d432184514aab71902bfd41abc,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Monedas conseguidas:'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1daaa7d432184514aab71902bfd41abc, type: 3}
