@@ -4608,6 +4608,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1641659472795186307, guid: 568af86061fd7ee4a95c3869453653f2,
         type: 3}
+    - target: {fileID: 302943408208996299, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
+        type: 3}
+      propertyPath: _goalsInGameController
+      value: 
+      objectReference: {fileID: 828442218}
     - target: {fileID: 4261568591410709100, guid: a6863b0f3b3bbd84395f2e1b43826dbf,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -5635,6 +5640,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 828442216}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &828442218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8495102084579725704, guid: 0d178099f6e057a41b8f30c6773e9439,
+    type: 3}
+  m_PrefabInstance: {fileID: 828442216}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19cf86377bff5a744b6c7aa5bc0348c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &845962369
 GameObject:
   m_ObjectHideFlags: 0
