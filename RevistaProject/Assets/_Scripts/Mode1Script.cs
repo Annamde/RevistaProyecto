@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,8 +18,7 @@ public class Mode1Script : MonoBehaviour
     bool musicPlayed = false;
     bool linesWronged = false;
 
-
-    // Start is called before the first frame update
+    
     void Awake()
     {
         canvasGO.enabled = false;
@@ -35,12 +33,9 @@ public class Mode1Script : MonoBehaviour
         
         GameManager.linesCompleted = 0;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        //print(GameManager.linesCompleted);
-
         GameManager.SetText(lifeText, GameManager.currentLife);
         GameManager.SetText(currentPointText, GameManager.currentPoints);
         GameManager.SetText(maxPoints, GameManager.Instance.totalPointsInGame);

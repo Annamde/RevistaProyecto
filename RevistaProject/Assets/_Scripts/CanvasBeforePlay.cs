@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,13 +9,21 @@ public class CanvasBeforePlay : MonoBehaviour
     [SerializeField] private Text _numberBarrasText;
     [SerializeField] private List<GameObject> _chakrasListObjects;
     [SerializeField] private GameObject _barraObject;
+    [SerializeField] private GoalsInGame _goalsInGameController; //acordarse de ponerlo en todas las escenas
 
     private List<int> _modesWithOnlyBarra = new List<int> { 2, 3 };
     private List<GameObject> _onlyChakras = new List<GameObject>();
     private List<GameObject> _onlyBarras = new List<GameObject>();
 
     private bool _needBarras = false;
-   
+
+
+    public List<GameObject> ChakrasListObject => _chakrasListObjects;
+    public GameObject BarrasObject => _barraObject;
+    public int ChakrasCounter { get; private set; }
+    public List<int> ModesWithOnlyBarra => _modesWithOnlyBarra;
+    public List<GameObject> OnlyChakras => _onlyChakras;
+
 
     private void Start()
     {
@@ -55,12 +62,14 @@ public class CanvasBeforePlay : MonoBehaviour
             }
         }
         InstantiateBarraObject();
+        _goalsInGameController.SetObjectives();
     }
 
     private void SetBarrasText(int barrasNumber)
     {
         _numberBarrasText.text = barrasNumber.ToString();
     }
+
     private void InstantiateBarraObject()
     {
         Instantiate(_barraObject, _instantiateBarraZone);
@@ -85,5 +94,10 @@ public class CanvasBeforePlay : MonoBehaviour
                 _onlyBarras.Add(_chakrasListObjects[i]);
             }
         }
+    }
+
+    public void ActiveChakrasMovement()
+    {
+        GameManager.Instance.EventController.ActiveChakrasMovementEvent.Invoke();
     }
 }

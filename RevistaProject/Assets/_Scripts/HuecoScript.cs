@@ -11,6 +11,7 @@ public class HuecoScript : MonoBehaviour
 
     public Image filler;
     public Image completedImage; //imagen con el chakra o la barra
+    
 
     void Start()
     {
@@ -29,6 +30,7 @@ public class HuecoScript : MonoBehaviour
                 {
                     if (isLine)
                     {
+                        GameManager.Instance.EventController.CompleteBarraEvent.Invoke();
                         GameManager.linesCompleted++;
                     }
 

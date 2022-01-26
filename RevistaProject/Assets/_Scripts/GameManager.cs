@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
@@ -49,8 +49,9 @@ public class GameManager : MonoBehaviour
 
     public bool IsFirtsOpen = true;
 
+    public EventManager EventController; 
 
-
+    #region Audios
     public static AudioSource audio;
     public AudioSource aGeneral;
     public static AudioSource audioChac;
@@ -83,7 +84,7 @@ public class GameManager : MonoBehaviour
 
     public static AudioSource audioOst;
     public AudioSource aOst;
-
+    #endregion
 
     private void Awake()
     {
@@ -111,6 +112,8 @@ public class GameManager : MonoBehaviour
         a7wrong = a7;
         a8win = a8;
         a9gameover = a9;
+
+        EventController = new EventManager();
     }
 
     // Start is called before the first frame update

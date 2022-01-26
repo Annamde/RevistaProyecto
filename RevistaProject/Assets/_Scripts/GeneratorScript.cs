@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class GeneratorScript : MonoBehaviour
@@ -18,17 +17,20 @@ public class GeneratorScript : MonoBehaviour
 
     private int temp, tempPos, tempOther, tempPosOther;
     private GameObject tempGO, goOther;
-
-    // Start is called before the first frame update
-    void Start()
+    
+    private void Start()
     {
-        InvokeRepeating("Generator", initialTime,intervaltime);
-        InvokeRepeating("GeneratorOthers", initialTimeO,intervaltimeO);
+        GameManager.Instance.EventController.ActiveChakrasMovementEvent.AddListener(ActiveGenerators);
     }
 
-    void Generator()
+    private void ActiveGenerators()
     {
-        //print(positions.Count);
+        InvokeRepeating("Generator", initialTime, intervaltime);
+        InvokeRepeating("GeneratorOthers", initialTimeO, intervaltimeO);
+    }
+
+    private void Generator()
+    {
         temp = Random.Range(0, GameManager.charkrasMode1);
         tempPos = Random.Range(0, positions.Count);
         if (tempPos % 2 == 0 || tempPos == 0) //fuerza a que el chakra salga de una position impar
@@ -39,13 +41,12 @@ public class GeneratorScript : MonoBehaviour
         {
             tempPos = tempPos - 1;
         }
-        //print("tempPos  " + tempPos);
        
         tempGO = Instantiate(chakrasType1[temp]);
         tempGO.transform.position = positions[tempPos].gameObject.transform.position;
     }
 
-    void GeneratorOthers()
+    private void GeneratorOthers()
     {
         tempOther = Random.Range(0, GameManager.otherChakrasMode1);
         tempPosOther = Random.Range(0, positions.Count);
@@ -53,7 +54,6 @@ public class GeneratorScript : MonoBehaviour
         {
             tempPosOther = tempPosOther - 1;
         }
-        //print("tempPosOther  " + tempPosOther);
 
         goOther = Instantiate(otherChakras[tempOther]);
         goOther.transform.position = positions[tempPosOther].gameObject.transform.position;
