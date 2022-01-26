@@ -184,6 +184,7 @@ public class Mode1ChakrasScirpt : MonoBehaviour
                     GameManager.audio.Stop();
                     GameManager.audio.clip = GameManager.a6complete;
                     GameManager.audio.Play();
+                    GameManager.Instance.EventController.OnCompleteCharkaEvent.Invoke(this.gameObject);
                 }
                 else
                 {

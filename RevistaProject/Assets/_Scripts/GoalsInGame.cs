@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GoalsInGame : MonoBehaviour
@@ -9,14 +10,14 @@ public class GoalsInGame : MonoBehaviour
     [SerializeField] private Text _numberBarrasText;
     
     private int _currentNumberBarras;
+    private List<GameObject> _chakrasInScene = new List<GameObject>();
+    
 
-    //ponerlo bonito en la escena
-    //hacer que al completar alguno se elimine
     private void Start()
     {
         GameManager.Instance.EventController.CompleteBarraEvent.AddListener(SubtractABarra);
+        GameManager.Instance.EventController.OnCompleteCharkaEvent.AddListener(DisableCorrectChakra);
     }
-
 
     public void SetObjectives()
     {
@@ -39,7 +40,7 @@ public class GoalsInGame : MonoBehaviour
 
             for (int i = 0; i < levelcounter; i++)
             {
-                Instantiate(_objectivesController.ChakrasListObject[i], _chakrasInstantiateZone);
+                _chakrasInScene.Add(Instantiate(_objectivesController.ChakrasListObject[i], _chakrasInstantiateZone));
             }
             if (needBarras)
             {
@@ -64,5 +65,14 @@ public class GoalsInGame : MonoBehaviour
     private void SetBarrasText(int number)
     {
         _numberBarrasText.text = number.ToString();
+    }
+
+    private void DisableCorrectChakra(GameObject chakra)
+    {
+        for (int i = 0; i < _chakrasInScene.Count; i++)
+        {
+            if (_chakrasInScene[i].tag == chakra.tag)
+                Destroy(_chakrasInScene[i].gameObject);
+        }
     }
 }  
